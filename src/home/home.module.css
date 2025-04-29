@@ -1,0 +1,66 @@
+.filter{
+    width: 100%;
+    height: 10vh;
+    background-color: chocolate;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.filter button{
+    margin-right: 20px;
+}
+.filter ul{
+    margin: 0;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.filter ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.text_box{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(20, 16, 16, 0.4);
+    border-bottom-right-radius: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--light-text);
+}
+.text_box h1{
+    font-weight: 800;
+    font-size: 15vh;
+    margin: 0;
+}
+.text_box p{
+    margin: 0;
+    color: chocolate;
+    font-size: 16px;
+}
+.product_div{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    gap: 3vh;
+    background-color: aqua;
+}
+.product_div div{
+    /* height: 40vh;
+    width: 95%; */
+    background-color: red;
+}
+.span_div{
+    grid-row: 1 / span 2;
+    height: 90vh;
+}
+.size{
+    height: 20px;
+    width: 20px;
+}
+
