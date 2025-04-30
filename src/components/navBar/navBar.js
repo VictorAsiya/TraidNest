@@ -1,8 +1,27 @@
 import React from "react";
+import { useEffect } from "react";
 import styles from "./navBar.module.css";
 import { Link } from "react-router-dom";
 
 function navBar() {
+  // useEffect(() => {
+  //   const runFunctionIfMedium = () => {
+  //     const width = window.innerWidth;
+  //     if (width >= 768 && width < 1024) {
+  //       console.log("✅ Medium screen — run function here");
+  //       // yourFunction(); // Call your actual function here
+  //     }
+  //   };
+
+  //   runFunctionIfMedium(); // Run on first render
+
+  //   window.addEventListener("resize", runFunctionIfMedium); // Optional: run on resize
+
+  //   return () => {
+  //     window.removeEventListener("resize", runFunctionIfMedium);
+  //   };
+  // }, []);
+
   return (
     <header className={styles.header}>
       <div className={styles.first}>
@@ -40,7 +59,38 @@ function navBar() {
       </div>
 
       <div className={styles.second}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          className={styles.bar}
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+
         <img src="Logo.png" alt="Logo" className={styles.logo} />
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          className={styles.bar}
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+          />
+        </svg>
+
         <input type="text" />
         <div className={styles.container}>
           <p>
@@ -77,7 +127,7 @@ function navBar() {
               />
             </svg>
             #0.00 <br />
-            {0}Items
+            {0} items
           </p>
         </div>
       </div>

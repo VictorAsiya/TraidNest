@@ -112,15 +112,20 @@ function Home() {
 
       <div className={styles.product_div}>
         <div className={styles.left_div}>
-          {/* <img src={oneImage} alt="" /> */}
+          <h1>Fairly Used Hisense Fridge</h1>
+          <p className={styles.p}>#50,000</p>
+          <Button title="Buy Now" className={styles.Button} />
         </div>
         <div className={styles.right_div}>
           <div className={styles.one}>
-            {/* <img src={twoImage} alt="" /> */}
-            <div className={styles.one_left}></div>
+            <div className={styles.one_left}>
+              <p>Special Offer</p>
+              <h1>Soft Cushon Chair</h1>
+              <p className={styles.p}>#28,000</p>
+              <Button title="Buy Now" className={styles.Button} />
+            </div>
 
             <div className={styles.one_right}>
-
               <h3>Hot Sales</h3>
 
               <div className={styles.all_products}>
@@ -164,7 +169,7 @@ function Home() {
               </div>
             </div>
           </div>
-          
+
           <div className={styles.two}>
             <p
               style={{
@@ -185,17 +190,17 @@ function Home() {
                 </div>
                 <div>
                   <p className={styles.product_details}>Handbag</p>
-                  <p style={{ margin: "0", color: 'red'}}>#5,000</p>
+                  <p style={{ margin: "0", color: "red" }}>#5,000</p>
                 </div>
               </div>
 
               <div className={styles.each}>
                 <div>
-                  <img src={ten} alt="" style={{ height: "80px"}} />
+                  <img src={ten} alt="" style={{ height: "80px" }} />
                 </div>
                 <div>
                   <p className={styles.product_details}>Nike Sneaker</p>
-                  <p style={{ margin: "0", color: 'red' }}>#5,000</p>
+                  <p style={{ margin: "0", color: "red" }}>#5,000</p>
                 </div>
               </div>
 
@@ -205,7 +210,7 @@ function Home() {
                 </div>
                 <div>
                   <p className={styles.product_details}>Knife Rack</p>
-                  <p style={{ margin: "0", color: 'red' }}>#5,000</p>
+                  <p style={{ margin: "0", color: "red" }}>#5,000</p>
                 </div>
               </div>
 
@@ -215,10 +220,9 @@ function Home() {
                 </div>
                 <div>
                   <p className={styles.product_details}>LG TV</p>
-                  <p style={{ margin: "0", color: 'red' }}>#5,000</p>
+                  <p style={{ margin: "0", color: "red" }}>#5,000</p>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
