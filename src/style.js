@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const Section = styled.section`
   height: 100vh;
   width: 100%;
+
+  @media screen and (max-width: 768px) {
+    height: 70vh;
+  }
 `;
 export const Button = styled.button`
   padding: 5px 10px;
