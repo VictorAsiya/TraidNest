@@ -24,7 +24,7 @@ function Home() {
   return (
     <main>
       <SC.Section>
-        <SC.FixedDiv></SC.FixedDiv>
+        <SC.FixedDiv className={styles.FixedDiv}></SC.FixedDiv>
         <div className={styles.filter}>
           <ul>
             <li>

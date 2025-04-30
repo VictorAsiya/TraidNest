@@ -132,18 +132,18 @@
   &&:hover::after {
     opacity: 0.4;
   }
-
 }
-.p{
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    color: chocolate;
-    font-weight: bold;
-    z-index: 3;
-    position: relative;
+.p {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: chocolate;
+  font-weight: bold;
+  z-index: 3;
+  position: relative;
 }
-.one_left:hover .p, .left_div:hover .p{
-    opacity: 1;
+.one_left:hover .p,
+.left_div:hover .p {
+  opacity: 1;
 }
 .one_left p,
 .one_left h1 {
@@ -152,11 +152,11 @@
   z-index: 4;
   position: relative;
 }
-.product_div button{
-    position: absolute;
-    bottom: 2vh;
-    margin-left: 10px;
-    z-index: 3;
+.product_div button {
+  position: absolute;
+  bottom: 2vh;
+  margin-left: 10px;
+  z-index: 3;
 }
 .one_right {
   height: 100%;
@@ -249,11 +249,21 @@
   width: auto;
 }
 @media screen and (max-width: 768px) {
-    .filter ul {
-      display: none;
-    }
-    .filter button {
-     display: none;
-    }
-    
+  .filter {
+    display: none;
   }
+  .text_box{  
+    padding-top: 20vh;
+  }
+  .text_box h1 {
+    font-weight: 600;
+    font-size: 12vh;
+    margin-bottom: 0;
+  }
+  .text_box p {
+    margin: 0;
+    color: chocolate;
+    font-size: 14px;
+  }
+
+}
