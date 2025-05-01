@@ -39,17 +39,17 @@ header {
   width: 40%;
   height: 40px;
 }
-.label_wrap input{
-    height: 100%;
-    width: 100%;
-    border-radius: 25px;
-    border: none;
-    padding-left: 10px;
-    font-size: 1.2em;
-    font-family: var(--font);
-    font-weight: 400;
-    color: var(--dark-text);
-    outline: none;
+.label_wrap input {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  padding-left: 10px;
+  font-size: 1.2em;
+  font-family: var(--font);
+  font-weight: 400;
+  color: var(--dark-text);
+  outline: none;
 }
 .navBar {
   display: flex;
@@ -107,7 +107,8 @@ header {
   height: 25px;
   width: 25px;
 }
-.bar, .close {
+.bar,
+.close {
   display: none;
   cursor: pointer;
 }
@@ -122,7 +123,7 @@ header {
     display: flex;
     justify-content: space-around;
   }
-  .logo{
+  .logo {
     height: 20vh;
   }
   .second .label_wrap {
@@ -135,7 +136,7 @@ header {
     justify-content: center;
     align-items: center;
   }
-  .label_wrap input{
+  .label_wrap input {
     width: 80%;
   }
   .second .container {
@@ -148,16 +149,16 @@ header {
   body {
     font-size: 14px;
   }
-  .first{
+  .first {
     display: flex;
   }
 
   .navBar {
-    height: 73%;
+    height: 75%;
     position: absolute;
     top: 0;
     left: 0;
-    width: 40%;
+    width: 45%;
     display: none;
     background-color: #8383a1;
     padding: 1rem;
@@ -166,41 +167,31 @@ header {
     transition: all 0.3s ease-in-out;
     z-index: 9;
     border-bottom-right-radius: 20px;
-
-    /* &&::before{
-      content: '';
-      height: 50vh;
-      background-color: black;
-      width: 100%;
-    } */
   }
   .navBar ul {
     flex-direction: column;
-    /* height: 50vh; */
-    /* background-color: aqua; */
     padding: 0;
   }
-  .navBar ul li{
+  .navBar ul li {
     display: flex;
-    /* justify-content: flex-start; */
-    /* background-color: blue; */
     width: 80%;
     margin-bottom: 2vh;
 
-    &&:hover{
+    &&:hover {
       border-right: 2px solid rgb(203, 196, 196);
     }
   }
-  .navBar ul a{
+  
+  .navBar ul a {
     font-size: 14px;
+    -webkit-tap-highlight-color: transparent; /* Remove mobile highlight */
+    -webkit-focus-ring-color: transparent;     /* Remove iOS focus ring */
 
-    &&:hover{
-
+    &&:hover {
       color: var(--header-color);
     }
-
   }
-  .navBar ul li .line{
+  .navBar ul li .line {
     border: none;
   }
 
@@ -208,7 +199,7 @@ header {
   .show {
     display: block;
   }
-  .close{
+  .close {
     display: block;
     position: absolute;
     color: red;
@@ -217,7 +208,7 @@ header {
     right: 3vh;
     height: 30px;
 
-    &&:hover{
+    &&:hover {
       background-color: white;
       border-radius: 5px;
     }
