@@ -131,22 +131,22 @@ function Home() {
 
                 <div className={styles.all_products}>
                     <div className={styles.top}>
-                    <div className={styles.products}>
-                        <img src={one} alt="" />
-                        <p className={styles.product_details}>Washing Machine</p>
-                    </div>
-                    <div className={styles.products}>
-                        <img src={seven} alt="" />
-                        <p className={styles.product_details}>HP Laptop</p>
-                    </div>
-                    <div className={styles.products}>
-                        <img src={three} alt="" />
-                        <p className={styles.product_details}>Air Conditioner</p>
-                    </div>
-                    <div className={styles.products}>
-                        <img src={four} alt="" />
-                        <p className={styles.product_details}>Ceiling Fan</p>
-                    </div>
+                        <div className={styles.products}>
+                            <img src={one} alt="" />
+                            <p className={styles.product_details}>Washing Machine</p>
+                        </div>
+                        <div className={styles.products}>
+                            <img src={seven} alt="" />
+                            <p className={styles.product_details}>HP Laptop</p>
+                        </div>
+                        <div className={styles.products}>
+                            <img src={three} alt="" />
+                            <p className={styles.product_details}>Air Conditioner</p>
+                        </div>
+                        <div className={styles.products}>
+                            <img src={four} alt="" />
+                            <p className={styles.product_details}>Ceiling Fan</p>
+                        </div>
                     </div>
 
                     <div className={styles.bottom}>
@@ -176,6 +176,7 @@ function Home() {
                 style={{
                     display: "flex",
                     justifyContent: "space-between",
+                    padding: "0 20px",
                     margin: "0",
                     marginBottom: "2vh",
                     height: "7vh",
@@ -186,6 +187,7 @@ function Home() {
                 </p>
                 <div className={styles.listing}>
                 <div className={styles.each}>
+                <Button title="Buy Now" className={styles.Button} />
                     <div>
                     <img src={nine} alt="" style={{ height: "60px" }} />
                     </div>
@@ -196,6 +198,7 @@ function Home() {
                 </div>
 
                 <div className={styles.each}>
+                <Button title="Buy Now" className={styles.Button} />
                     <div>
                     <img src={ten} alt="" style={{ height: "60px" }} />
                     </div>
@@ -206,6 +209,7 @@ function Home() {
                 </div>
 
                 <div className={styles.each}>
+                <Button title="Buy Now" className={styles.Button} />
                     <div>
                     <img src={eleven} alt="" style={{ height: "60px" }} />
                     </div>
@@ -216,6 +220,7 @@ function Home() {
                 </div>
 
                 <div className={styles.each}>
+                <Button title="Buy Now" className={styles.Button} />
                     <div>
                     <img src={twelve} alt="" style={{ height: "50px" }} />
                     </div>

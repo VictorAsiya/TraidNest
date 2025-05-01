@@ -244,6 +244,22 @@
   justify-content: space-evenly;
   align-items: center;
   border-right: 1px solid var(--header-color);
+  cursor: pointer;
+  position: relative;
+
+  &&:hover button{
+    display: block;
+  }
+}
+.each button{
+    position: absolute;
+    margin-top: 1vh;
+    left: 7vh;
+    bottom: 75%;
+    /* top: 2vh; */
+    padding: 3px 10px;
+    font-size: 10px;
+    display: none;
 }
 .each img {
   height: 80%;
@@ -273,13 +289,13 @@
   }
   .text_box h1 {
     font-weight: 600;
-    font-size: 8vh;
+    font-size: 12vh;
     margin-bottom: 0;
   }
   .text_box p {
     margin: 0;
     color: chocolate;
-    font-size: 12px;
+    font-size: 16px;
   }
   .products {
     height: 14vh;
@@ -295,13 +311,85 @@
   .right_div {
     width: 90%;
   }
-  .two{
+  .two {
     width: 100%;
   }
   .listing {
     overflow-x: scroll;
     overflow-y: hidden;
-    /* gap: 5px; */
+  }
+  .each button{
+    font-size: 8px;
+    margin-bottom: 0vh;
+  }
+}
+@media screen and (max-width: 555px) {
+  .text_box h1 {
+    font-weight: 600;
+    font-size: 6vh;
+    margin-bottom: 0;
+  }
+  .text_box p {
+    margin: 0;
+    color: chocolate;
+    font-size: 10px;
+  }
+  .products {
+    height: 13vh;
+    width: 13vh;
+  }
+  .product_div {
+    flex-direction: column;
+    gap: 5vh;
+    /* background-color: aqua; */
+  }
+  .left_div {
+    width: 90%;
+    height: 60vh;
+  }
+  .right_div {
+    width: 95%;
+  }
+  .one {
+    gap: 10px;
+  }
+  .one_left {
+    width: 60% !important;
+  }
+  .all_products {
+    /* background-color: aquamarine; */
+    flex-direction: row;
+    /* height: 50vh; */
+  }
+  .one_right {
+    /* background-color: blueviolet; */
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top,
+  .bottom {
+    display: grid;
+    /* background-color: bisque; */
+    overflow-y: scroll;
+    gap: 6vh;
+    overflow-x: hidden;
+    width: 80%;
+    height: 50vh;
+    /* padding: 0 10px; */
+  }
+  .two {
+    width: 96%;
+  }
+  .each button{
+    font-size: 7px;
+    margin-bottom: 1vh;
+  }
+  .products img {
+    &&:hover {
+      scale: 1.08;
+    }
   }
   
 }
