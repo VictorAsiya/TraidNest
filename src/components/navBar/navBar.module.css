@@ -69,6 +69,7 @@ header {
   margin: 0 15px;
   font-size: 1.2em;
 }
+
 .navBar ul a {
   text-decoration: none;
   color: var(--dark-text);
@@ -106,8 +107,9 @@ header {
   height: 25px;
   width: 25px;
 }
-.bar {
+.bar, .close {
   display: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -141,8 +143,83 @@ header {
   }
   .bar {
     display: block;
+    cursor: pointer;
   }
   body {
     font-size: 14px;
+  }
+  .first{
+    display: flex;
+  }
+
+  .navBar {
+    height: 73%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    display: none;
+    background-color: #8383a1;
+    padding: 1rem;
+    padding-top: 8vh;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    z-index: 9;
+    border-bottom-right-radius: 20px;
+
+    /* &&::before{
+      content: '';
+      height: 50vh;
+      background-color: black;
+      width: 100%;
+    } */
+  }
+  .navBar ul {
+    flex-direction: column;
+    /* height: 50vh; */
+    /* background-color: aqua; */
+    padding: 0;
+  }
+  .navBar ul li{
+    display: flex;
+    /* justify-content: flex-start; */
+    /* background-color: blue; */
+    width: 80%;
+    margin-bottom: 2vh;
+
+    &&:hover{
+      border-right: 2px solid rgb(203, 196, 196);
+    }
+  }
+  .navBar ul a{
+    font-size: 14px;
+
+    &&:hover{
+
+      color: var(--header-color);
+    }
+
+  }
+  .navBar ul li .line{
+    border: none;
+  }
+
+  /* Show nav when state is true */
+  .show {
+    display: block;
+  }
+  .close{
+    display: block;
+    position: absolute;
+    color: red;
+    font-weight: 900;
+    top: 2vh;
+    right: 3vh;
+    height: 30px;
+
+    &&:hover{
+      background-color: white;
+      border-radius: 5px;
+    }
   }
 }
