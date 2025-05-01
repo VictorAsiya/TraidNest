@@ -385,7 +385,7 @@
     /* background-color: blueviolet; */
   }
   .one_right {
-    width: 84vh;
+    width: 100%;
     height: fit-content;
     /* background-color: bisque; */
   }
@@ -394,11 +394,11 @@
     padding-bottom: 20px;
   }
   .products {
-    height: 17vh;
-    width: 17vh;
+    height: 8vh;
+    width: 8vh;
   }
   .two {
-    width: 98%;
+    width: 100%;
     gap: 0;
   }
   .listing {
