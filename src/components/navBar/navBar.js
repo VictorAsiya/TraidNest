@@ -7,7 +7,7 @@ function NavBar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 10 && showNav) {
+      if (window.pageYOffset > 5 && showNav) {
         setShowNav(false); // Close nav and backdrop on scroll
       }
     };
