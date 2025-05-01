@@ -14,8 +14,8 @@ export const Button = styled.button`
   color: red;
 `;
 export const FixedDiv = styled.div`
-  position: fixed;
-  height: 100vh;
+  position: absolute;
+  height: 122vh;
   width: 100%;
   background: linear-gradient(rgba(19, 4, 5, 0.4), rgba(1, 1, 10, 0.8)),
     url("/images/one.jpg");
