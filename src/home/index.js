@@ -23,7 +23,7 @@ import {
 function Home() {
   return (
     <main>
-      <SC.Section>
+      <SC.Section className={styles.Section}>
         <SC.FixedDiv className={styles.FixedDiv}></SC.FixedDiv>
         <div className={styles.filter}>
           <ul>
