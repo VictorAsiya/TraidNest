@@ -39,6 +39,9 @@ header {
   width: 40%;
   height: 40px;
 }
+.label_wrap{
+  position: relative;
+}
 .label_wrap input {
   height: 100%;
   width: 100%;
@@ -50,6 +53,14 @@ header {
   font-weight: 400;
   color: var(--dark-text);
   outline: none;
+}
+.search{
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 1.4vh;
+  right: 2vh;
+  color: red;
 }
 .navBar {
   display: flex;
@@ -107,6 +118,7 @@ header {
   height: 25px;
   width: 25px;
 }
+
 .bar,
 .close {
   display: none;
@@ -118,6 +130,10 @@ header {
   }
   .first {
     display: none;
+  }
+  .search{
+    top: 3vh;
+    right: 15vh;
   }
   .second {
     display: flex;
@@ -154,11 +170,11 @@ header {
   }
 
   .navBar {
-    height: 75%;
+    height: 110vh;
     position: absolute;
     top: 0;
     left: 0;
-    width: 45%;
+    width: 65%;
     display: none;
     background-color: #8383a1;
     padding: 1rem;
