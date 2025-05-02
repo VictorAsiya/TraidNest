@@ -39,7 +39,7 @@ header {
   width: 40%;
   height: 40px;
 }
-.label_wrap{
+.label_wrap {
   position: relative;
 }
 .label_wrap input {
@@ -54,12 +54,12 @@ header {
   color: var(--dark-text);
   outline: none;
 }
-.search{
+.search {
   height: 25px;
   width: 25px;
   position: absolute;
-  top: 1.4vh;
-  right: 2vh;
+  top: 19%;
+  right: 2%;
   color: red;
 }
 .navBar {
@@ -97,6 +97,11 @@ header {
     color: rgb(128, 106, 95);
   }
 }
+.span {
+  display: none;
+  /* gap: 20px; */
+}
+
 .line {
   display: inline-block;
   padding-right: 20px;
@@ -131,9 +136,9 @@ header {
   .first {
     display: none;
   }
-  .search{
-    top: 3vh;
-    right: 15vh;
+  .search {
+    top: 30%;
+    right: 13%;
   }
   .second {
     display: flex;
@@ -177,7 +182,7 @@ header {
     width: 65%;
     display: none;
     background-color: #8383a1;
-    padding: 1rem;
+    /* padding: 1rem; */
     padding-top: 8vh;
     color: white;
     transition: all 0.3s ease-in-out;
@@ -187,6 +192,7 @@ header {
   .navBar ul {
     flex-direction: column;
     padding: 0;
+    /* padding-top: 3vh; */
   }
   .navBar ul li {
     display: flex;
@@ -197,11 +203,11 @@ header {
       border-right: 2px solid rgb(203, 196, 196);
     }
   }
-  
+
   .navBar ul a {
     font-size: 14px;
     -webkit-tap-highlight-color: transparent; /* Remove mobile highlight */
-    -webkit-focus-ring-color: transparent;     /* Remove iOS focus ring */
+    -webkit-focus-ring-color: transparent; /* Remove iOS focus ring */
 
     &&:hover {
       color: var(--header-color);
@@ -210,6 +216,19 @@ header {
   .navBar ul li .line {
     border: none;
   }
+  .home a{
+    padding-top: 1vh;
+  }
+  .span {
+    display: flex;
+    background-color: var(--background);
+    width: 100%;
+    justify-content: space-around;
+    color: var(--header-color);
+    font-size: 3vh;
+    cursor: pointer;
+  }
+
 
   /* Show nav when state is true */
   .show {
@@ -229,4 +248,31 @@ header {
       border-radius: 5px;
     }
   }
+  .Categories{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;   
+    font-size: 12px; 
+  }
+  
+  .Categories button {
+    display: none;
+  }
+  .Categories ul li{
+    /* margin-bottom: 3vh; */
+    padding-top: 2vh;
+  }
+  .Categories ul li:hover{
+    color: var(--header-color);
+    cursor: pointer;
+  }
+
+  .Categories svg {
+    display: none;
+  }
+  
 }
+
+/* @media screen and (max-width: 555px) {
+} */

@@ -1,10 +1,30 @@
 import React, { useState, useEffect } from "react";
 import styles from "./navBar.module.css";
 import { Link } from "react-router-dom";
+import Categories from '../categories/'
+
+const ReusableComponent = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  if (!isMobile) return null;
+
+  return (
+    <Categories className = {styles.Categories}/>
+  );
+};
+
 
 function NavBar() {
-  const [showNav, setShowNav] = useState(false);
 
+  const [showNav, setShowNav] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       if (window.pageYOffset > 5 && showNav) {
@@ -15,6 +35,19 @@ function NavBar() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [showNav]); // re-run effect when showNav changes
+
+  const [show, setShow] = useState(false);
+  const [active, setActive] = useState(false);
+
+  const handleClick = ()=>{
+    setShow(true)
+    setActive(true)
+  }
+  const handleClick2 = ()=>{
+    setShow(false)
+    setActive(true)
+  }
+
 
   return (
     <header className={styles.header}>
@@ -50,36 +83,41 @@ function NavBar() {
               d="M6 18 18 6M6 6l12 12"
             />
           </svg>
+          <span className={styles.span}>
+            <h3 onClick={()=>handleClick()} >Menu</h3>
+            <h3 onClick={()=>handleClick2()}>Categories</h3>
+          </span>
 
-          <ul className={styles.ul_one}>
-            <li>
-              <Link to="./" className={styles.line}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="./products" className={styles.line}>
-                Products
-              </Link>
-            </li>
-            <li>
-              <Link to="./about" className={styles.no_line}>
-                About
-              </Link>
-            </li>
-          </ul>
+            {!show && <ul className={styles.ul_one}>
+              <li className={styles.home}>
+                <Link to="./" className={styles.line} onClick={()=>setShowNav(false)}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="./products" className={styles.line} onClick={()=>setShowNav(false)}>
+                  Products
+                </Link>
+              </li>
+              <li>
+                <Link to="./about" className={styles.no_line} onClick={()=>setShowNav(false)}>
+                  About
+                </Link>
+              </li>
+            </ul>}
 
-          <ul className={styles.ul_two}>
-            <li>
-              <Link className={styles.line}>Track Your Order</Link>
-            </li>
-            <li>
-              <Link className={styles.line}>Contact Us</Link>
-            </li>
-            <li>
-              <Link className={styles.no_line}>FAQ</Link>
-            </li>
-          </ul>
+            {!show && <ul className={styles.ul_two}>
+              <li>
+                <Link className={styles.line} onClick={()=>setShowNav(false)}>Track Your Order</Link>
+              </li>
+              <li>
+                <Link className={styles.line} onClick={()=>setShowNav(false)}>Contact Us</Link>
+              </li>
+              <li>
+                <Link className={styles.no_line} onClick={()=>setShowNav(false)}>FAQ</Link>
+              </li>
+            </ul>}
+            {show && <ReusableComponent />}
         </nav>
       </div>
 

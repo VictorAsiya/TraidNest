@@ -2,6 +2,7 @@ import React from "react";
 import * as SC from "../style";
 import styles from "./home.module.css";
 import Button from "../components/button";
+import Categories from '../components/categories'
 // import threeImage from "../assets/section1-image/three.jpg";
 // import fourImage from "../assets/section1-image/three.jpg";
 // import fiveImage from "../assets/section1-image/three.jpg";
@@ -25,82 +26,7 @@ function Home() {
     <main>
       <SC.Section className={styles.Section}>
         <SC.FixedDiv className={styles.FixedDiv}></SC.FixedDiv>
-        <div className={styles.filter}>
-          <ul>
-            <li>
-              Electronics
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className={styles.size}
-              >
-                <path
-                  stroke="round"
-                  strokeLinejoin="round"
-                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                />
-              </svg>
-            </li>
-            <li>
-              Fashion
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className={styles.size}
-              >
-                <path
-                  stroke="round"
-                  strokeLinejoin="round"
-                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                />
-              </svg>
-            </li>
-            <li>
-              Appliances
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className={styles.size}
-              >
-                <path
-                  stroke="round"
-                  strokeLinejoin="round"
-                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                />
-              </svg>
-            </li>
-            <li>
-              Furniture
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className={styles.size}
-              >
-                <path
-                  stroke="round"
-                  strokeLinejoin="round"
-                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                />
-              </svg>
-            </li>
-          </ul>
-
-          <div>
-            <Button title="Login/SignUp" className={Button} />
-          </div>
-        </div>
+        <Categories className={styles.filter}/>
 
         <div className={styles.text_box}>
           <h1>
