@@ -49,7 +49,7 @@
   align-items: center;
   padding: 20px 0;
   /* gap: 3vh; */
-  background-color: rgb(194, 192, 188);
+  background-color: var(--secondary);
 }
 
 .left_div {
@@ -186,7 +186,7 @@
   height: 14vh;
   width: 14vh;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--product);
 }
 .products img {
   width: 10%;
@@ -226,7 +226,7 @@
 .two {
   width: 95%;
   height: 28%;
-  background-color: rgba(255, 255, 255, 0.454);
+  background-color: var(--product);
   border-radius: 20px;
   padding: 0 10px;
   color: var(--header-color);

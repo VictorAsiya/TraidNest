@@ -84,8 +84,8 @@ function NavBar() {
             />
           </svg>
           <span className={styles.span}>
-            <h3 onClick={()=>handleClick()} >Menu</h3>
-            <h3 onClick={()=>handleClick2()}>Categories</h3>
+            <h3 onClick={()=>handleClick2()} >Menu</h3>
+            <h3 onClick={()=>handleClick()}>Categories</h3>
           </span>
 
             {!show && <ul className={styles.ul_one}>
@@ -129,7 +129,6 @@ function NavBar() {
           strokeWidth="1.5"
           stroke="currentColor"
           className={styles.bar}
-          // onClick={()=> setMenuBar(!menubar)}
           onClick={() => setShowNav(!showNav)}
         >
           <path

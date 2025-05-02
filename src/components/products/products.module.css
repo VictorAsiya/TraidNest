@@ -1,0 +1,107 @@
+.main{
+    height: 150vh;
+    width: 100%;
+    background-color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left{
+    height: 90%;
+    width: 20%;
+    background-color: var(--product);
+    border-radius: 3vh;
+    background:url(../../assets/section1-image/pngegg6.png), linear-gradient(rgba(12, 26, 180, 0.5), rgba(9, 9, 130, 0.5)) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+.right{
+    height: 90%;
+    width: 78%;
+    /* background-color: rgb(255, 153, 0) */
+}
+.write{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 10%;
+}
+.write span{
+    display: flex;
+    gap: 30px;
+}
+.product{
+    height: 90%;
+    width: 100%;
+    /* background-color: pink; */
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto auto auto auto auto;
+}
+.each{
+    height: 96%;
+    width: 90%;
+    background-color: var(--product);
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image{
+    height: 65%;
+    width: 80%;
+    /* background-color: antiquewhite; */
+    background: url(../../assets/section1-image/pngegg10.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 10px;
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    position: relative;
+    cursor: pointer;
+}
+.image:hover .absolute{
+    display: flex;
+    animation: move .5s ease-in-out;
+}
+.absolute{
+    position: absolute;
+    bottom: 0;
+    height: 10vh;
+    width: 100%;
+    border-bottom-left-radius: 3vh;
+    border-bottom-right-radius: 3vh;
+    display: none;
+    background-color: var(--product-color);
+    opacity: .9;
+}
+@keyframes move {
+    0%{
+        transform: translateY(10%) ;
+    }
+    100%{
+        transform: translateY(0) ;
+    }
+}
+.details{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: orangered; */
+    border-radius: 3vh;
+    color: black;
+
+}
+.details span p{
+    margin: 0;
+    padding: 0;
+}

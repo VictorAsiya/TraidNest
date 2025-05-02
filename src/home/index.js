@@ -20,6 +20,8 @@ import {
   eleven,
   twelve,
 } from "../components/image-exports";
+import Why from "../components/why_us";
+import Product from "../components/products";
 
 function Home() {
   return (
@@ -205,6 +207,9 @@ function Home() {
           </div>
         </div>
       </div>
+
+      <Why/>
+      <Product/>
     </main>
   );
 }

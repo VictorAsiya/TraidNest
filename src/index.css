@@ -1,7 +1,8 @@
 :root {
   --primary: #1D4ED8;
-  --secondary: #60A5FA;
-  --background: #c6cfca8e;
+  --secondary: #efefef;
+  --product: rgb(255, 255, 255);
+  --background: #f7f7f7;
   --dark-text: #111827;
   --light-text: #ffffff;
   --hover: #0D9488;
@@ -19,6 +20,8 @@ body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--light-text);
   cursor: grab;
+  -webkit-tap-highlight-color: transparent; /* Remove mobile highlight */
+  -webkit-focus-ring-color: transparent; /* Remove iOS focus ring */
 }
 Button{
   padding: 10px 20px;
@@ -34,5 +37,6 @@ Button{
     font-weight: 600;
   }
 }
+
 
 

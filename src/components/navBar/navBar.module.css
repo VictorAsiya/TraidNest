@@ -206,8 +206,6 @@ header {
 
   .navBar ul a {
     font-size: 14px;
-    -webkit-tap-highlight-color: transparent; /* Remove mobile highlight */
-    -webkit-focus-ring-color: transparent; /* Remove iOS focus ring */
 
     &&:hover {
       color: var(--header-color);
@@ -227,6 +225,10 @@ header {
     color: var(--header-color);
     font-size: 3vh;
     cursor: pointer;
+  }
+  .span h3{
+    font-size: 16px;
+    height: 100%;
   }
 
 
@@ -259,17 +261,31 @@ header {
   .Categories button {
     display: none;
   }
+  .navBar .Categories ul li{
+
+    &&:hover{
+      border: none;
+
+    }
+
+  }
   .Categories ul li{
     /* margin-bottom: 3vh; */
     padding-top: 2vh;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
   }
   .Categories ul li:hover{
     color: var(--header-color);
     cursor: pointer;
+    border: none;
+    border-right: 10px solid green;
   }
 
   .Categories svg {
-    display: none;
+    /* display: none; */
+    height: 20px;
   }
   
 }
