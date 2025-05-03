@@ -97,7 +97,7 @@ const Product = () => {
             <div className={styles.details}>
               <span>
                 <p>Generator</p>
-                <p st``>1 year old</p>
+                <p>1 year old</p>
                 <p style={{ color: "red" }}>#20,000</p>
               </span>
             </div>
