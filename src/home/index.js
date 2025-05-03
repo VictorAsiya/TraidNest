@@ -22,6 +22,7 @@ import {
 } from "../components/image-exports";
 import Why from "../components/why_us";
 import Product from "../components/products";
+import { fifteen, fourteen, thirteen } from "../components/products/product-images";
 
 function Home() {
   return (
@@ -129,19 +130,6 @@ function Home() {
               <div className={styles.each}>
                 <Button title="Buy Now" className={styles.Button} />
                 <div>
-                  <img src={eleven} alt="" style={{ height: "60px" }} />
-                </div>
-                <div>
-                  <p className={styles.product_details}>Knife Rack</p>
-                  <p style={{ margin: "0", color: "red", fontSize: "12px" }}>
-                    #5,000
-                  </p>
-                </div>
-              </div>
-
-              <div className={styles.each}>
-                <Button title="Buy Now" className={styles.Button} />
-                <div>
                   <img src={ten} alt="" style={{ height: "60px" }} />
                 </div>
                 <div>
@@ -158,7 +146,7 @@ function Home() {
                   <img src={eleven} alt="" style={{ height: "60px" }} />
                 </div>
                 <div>
-                  <p className={styles.product_details}>Knife Rack</p>
+                  <p className={styles.product_details}>  Knife Rack</p>
                   <p style={{ margin: "0", color: "red", fontSize: "12px" }}>
                     #5,000
                   </p>
@@ -168,20 +156,7 @@ function Home() {
               <div className={styles.each}>
                 <Button title="Buy Now" className={styles.Button} />
                 <div>
-                  <img src={nine} alt="" style={{ height: "60px" }} />
-                </div>
-                <div>
-                  <p className={styles.product_details}>Handbag</p>
-                  <p style={{ margin: "0", color: "red", fontSize: "12px" }}>
-                    #5,000
-                  </p>
-                </div>
-              </div>
-
-              <div className={styles.each}>
-                <Button title="Buy Now" className={styles.Button} />
-                <div>
-                  <img src={twelve} alt="" style={{ height: "50px" }} />
+                  <img src={twelve} alt="" style={{ height: "60px" }} />
                 </div>
                 <div>
                   <p className={styles.product_details}>LG TV</p>
@@ -194,10 +169,36 @@ function Home() {
               <div className={styles.each}>
                 <Button title="Buy Now" className={styles.Button} />
                 <div>
-                  <img src={eleven} alt="" style={{ height: "60px" }} />
+                  <img src={thirteen} alt="" style={{ height: "60px" }} />
                 </div>
                 <div>
-                  <p className={styles.product_details}>Knife Rack</p>
+                  <p className={styles.product_details}>Generator</p>
+                  <p style={{ margin: "0", color: "red", fontSize: "12px" }}>
+                    #5,000
+                  </p>
+                </div>
+              </div>
+
+              <div className={styles.each}>
+                <Button title="Buy Now" className={styles.Button} />
+                <div>
+                  <img src={fourteen} alt="" style={{ height: "50px" }} />
+                </div>
+                <div>
+                  <p className={styles.product_details}>Drum Set</p>
+                  <p style={{ margin: "0", color: "red", fontSize: "12px" }}>
+                    #5,000
+                  </p>
+                </div>
+              </div>
+
+              <div className={styles.each}>
+                <Button title="Buy Now" className={styles.Button} />
+                <div>
+                  <img src={fifteen} alt="" style={{ height: "60px" }} />
+                </div>
+                <div>
+                  <p className={styles.product_details}>Wrist Watch</p>
                   <p style={{ margin: "0", color: "red", fontSize: "12px" }}>
                     #5,000
                   </p>
