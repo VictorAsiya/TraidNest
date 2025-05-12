@@ -21,8 +21,8 @@ const Why = () => {
           </svg>
 
           <span>
-            <p>Free Shipping</p>
-            <p style={{ fontSize: "12px", color: "var(--background)" }}>
+            <p style={{fontWeight: '900'}}>Free Shipping</p>
+            <p className= {`${styles.about}  style={{ fontSize: "12px", color: "var(--background)" }}`}>
               On products about $50
             </p>
           </span>
@@ -44,8 +44,8 @@ const Why = () => {
           </svg>
 
           <span>
-            <p>Verified Traders</p>
-            <p style={{ fontSize: "12px", color: "var(--background)" }}>
+            <p style={{fontWeight: '900'}}>Verified Traders</p>
+            <p className= {`${styles.about}  style={{ fontSize: "12px", color: "var(--background)" }}`}>
               be sure you'll get your order
             </p>
           </span>
@@ -67,8 +67,8 @@ const Why = () => {
           </svg>
 
           <span>
-            <p>Discounted sales</p>
-            <p style={{ fontSize: "12px", color: "var(--background)" }}>
+            <p style={{fontWeight: '900'}}>Discounted sales</p>
+            <p className= {`${styles.about}  style={{ fontSize: "12px", color: "var(--background)" }}`}>
               Discount when you buy above $50
             </p>
           </span>
@@ -90,8 +90,8 @@ const Why = () => {
           </svg>
 
           <span>
-            <p>Expert Customer's Service</p>
-            <p style={{ fontSize: "12px", color: "var(--background)" }}>
+            <p style={{fontWeight: '900'}}>Expert Customer's Service</p>
+            <p className= {`${styles.about}  style={{ fontSize: "12px", color: "var(--background)" }}`}>
               always available
             </p>
           </span>
@@ -113,8 +113,8 @@ const Why = () => {
           </svg>
 
           <span>
-            <p>Exclusive Products</p>
-            <p style={{ fontSize: "12px", color: "var(--background)" }}>
+            <p style={{fontWeight: '900'}}>Exclusive Products</p>
+            <p className= {`${styles.about}  style={{ fontSize: "12px", color: "var(--background)" }}`}>
               We review every product
             </p>
           </span>

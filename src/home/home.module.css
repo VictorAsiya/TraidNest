@@ -366,14 +366,17 @@
     width: 93%;
     height: fit-content;
     gap: 2vh;
+    /* background-color: aqua; */
   }
   .one {
     display: flex;
     flex-direction: column;
+    /* background-color: black; */
     /* align-items: center; */
     gap: 2vh;
     height: fit-content;
     width: 100%;
+    padding-bottom: 2vh;
   }
   .one_left {
     width: 100% !important;
@@ -383,13 +386,17 @@
     width: 100% !important;
     height: fit-content;
   }
-  .bottom {
+  .all_products{
+    align-items: center;
+    justify-content: center;
+  }
+  .bottom, .top {
     height: fit-content;
     padding-bottom: 20px;
+    width: 92%;
   }
   .products {
-    height: 8vh;
-    width: 8vh;
+    width: 14vh;
   }
   .two {
     width: 95%;

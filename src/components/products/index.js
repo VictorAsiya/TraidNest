@@ -85,6 +85,7 @@ const Product = () => {
             <p>Discounted</p>
           </span>
         </div>
+        
         <div className={styles.product}>
           <div className={styles.each}>
             <div className={styles.image}>

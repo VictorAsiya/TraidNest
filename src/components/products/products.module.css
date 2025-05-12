@@ -105,6 +105,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .image img {
   /* height: 100%; */
@@ -158,4 +159,42 @@
   margin: 0;
   padding: 0;
   font-size: 13px;
+}
+@media screen and (max-width: 555px) {
+  .left{
+    display: none;
+  }
+  .right{
+    /* background-color: aquamarine; */
+    width: 95%;
+    height: 100%;
+  }
+  .write{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3vh;
+    /* background-color: aqua; */
+    margin-top: 0;
+  }
+  .write p{
+    margin: 0;
+    
+  }
+  .write span{
+    font-size: 14px;
+  }
+  .main{
+    /* background-color: black; */
+    padding-top: 0;
+    height: fit-content;
+  }
+  .product{
+    grid-template-columns: auto auto ;
+    /* background-color: black; */
+    height: fit-content;
+    padding-top: 20px;
+    border-radius: 20px;
+  }
 }

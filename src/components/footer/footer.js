@@ -9,7 +9,7 @@ function Footer() {
         </div>
 
         <div>
-            <p>&c Victor Asiya</p>
+            <p>&copy; Victor Asiya</p>
         </div>
     </footer>
   )
