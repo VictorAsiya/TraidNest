@@ -194,7 +194,19 @@
     grid-template-columns: auto auto ;
     /* background-color: black; */
     height: fit-content;
+    gap: 3vh;
     padding-top: 20px;
     border-radius: 20px;
+  }
+  .each{
+    height: 25vh;
+  }
+  .image{
+    /* background-color: aqua; */
+    border-radius: 15px;
+  }
+  .absolute{
+    height: 5vh;
+    border-radius: 3px;
   }
 }

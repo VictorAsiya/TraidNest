@@ -396,13 +396,22 @@
     width: 92%;
   }
   .products {
-    width: 14vh;
+    width: 7vh;
+    height: 7vh;
   }
   .two {
     width: 95%;
     gap: 0;
+    /* background-color: black; */
+    height: fit-content;
+  }
+  .two span{
+    font-size: 12px;
   }
   .listing {
     height: 100%;
+  }
+  .each{
+    height: 80%;
   }
 }
