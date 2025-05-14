@@ -43,6 +43,7 @@
   color: chocolate;
   font-size: 16px;
 }
+
 .product_div {
   display: flex;
   justify-content: space-around;
@@ -260,7 +261,7 @@
 }
 .each button {
   position: absolute;
-  right: 0 ;
+  right: 0;
   top: 0;
   height: 15px;
   padding: 3px 10px;
@@ -333,12 +334,12 @@
   }
 }
 @media screen and (max-width: 555px) {
-    .Section{
-        height: 65vh !important;
-    }
-    .FixedDiv{
-        height: 80vh;
-    }
+  .Section {
+    height: 65vh !important;
+  }
+  .FixedDiv {
+    height: 80vh;
+  }
   .text_box h1 {
     padding-top: 15vh;
     font-weight: 600;
@@ -386,11 +387,12 @@
     width: 100% !important;
     height: fit-content;
   }
-  .all_products{
+  .all_products {
     align-items: center;
     justify-content: center;
   }
-  .bottom, .top {
+  .bottom,
+  .top {
     height: fit-content;
     padding-bottom: 20px;
     width: 92%;
@@ -405,13 +407,13 @@
     /* background-color: black; */
     height: fit-content;
   }
-  .two span{
+  .two span {
     font-size: 12px;
   }
   .listing {
     height: 100%;
   }
-  .each{
+  .each {
     height: 80%;
   }
 }

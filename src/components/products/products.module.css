@@ -77,6 +77,24 @@
   cursor: pointer;
 }
 
+.highlight {
+  border: 2px solid #00bfff; /* bright blue border */
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+.matchLabel {
+  position: absolute;
+  /* top: 8px;
+  left: 8px; */
+  background: #00bfff;
+  color: chocolate;
+  /* padding: 2px 6px; */
+  font-size: 1vh;
+  border-radius: 4px;
+  font-weight: bold;
+  z-index: 200;
+}
 .product {
   height: 90%;
   width: 100%;
@@ -93,6 +111,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .image {
   height: 65%;
@@ -160,12 +179,77 @@
   padding: 0;
   font-size: 13px;
 }
+
+.chat {
+  display: flex;
+  position: fixed;
+  color: chocolate;
+  top: 80vh;
+  left: 5vh;
+  z-index: 5;
+  /* width: 45vh; */
+  cursor: pointer;
+}
+
+.chat:hover .input,
+.chat:focus-within .input {
+  display: inline-block;
+}
+.chat:hover svg,
+.chat:focus-within svg {
+  transform: scaleX(-1);
+}
+
+.chat svg {
+  height: 40px;
+  /* position: sticky; */
+  display: flex;
+  top: 40vh;
+  width: 40px;
+  z-index: 20;
+}
+
+.input {
+  display: none;
+  margin: 6vh 0 0 0vh;
+  
+}
+
+.input input {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 5px;
+  outline: none;
+}
+.Button {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .main{
+    height: fit-content;
+  }
+  .left{
+    height: 120vh;
+    width: 35%;
+  }
+  .right{
+    height: 120vh;
+    overflow-y: scroll;
+  }
+  .product{
+    grid-template-columns: auto auto auto;
+    height: fit-content;
+  }
+}
 @media screen and (max-width: 555px) {
   .left{
     display: none;
   }
   .right{
-    /* background-color: aquamarine; */
     width: 95%;
     height: 100%;
   }
@@ -175,7 +259,6 @@
     justify-content: center;
     align-items: flex-start;
     gap: 3vh;
-    /* background-color: aqua; */
     margin-top: 0;
   }
   .write p{
@@ -186,13 +269,11 @@
     font-size: 14px;
   }
   .main{
-    /* background-color: black; */
     padding-top: 0;
     height: fit-content;
   }
   .product{
     grid-template-columns: auto auto ;
-    /* background-color: black; */
     height: fit-content;
     gap: 3vh;
     padding-top: 20px;

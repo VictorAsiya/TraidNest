@@ -2,10 +2,7 @@ import React from "react";
 import * as SC from "../style";
 import styles from "./home.module.css";
 import Button from "../components/button";
-import Categories from '../components/categories'
-// import threeImage from "../assets/section1-image/three.jpg";
-// import fourImage from "../assets/section1-image/three.jpg";
-// import fiveImage from "../assets/section1-image/three.jpg";
+import Categories from "../components/categories";
 import {
   one,
   two,
@@ -22,14 +19,18 @@ import {
 } from "../components/image-exports";
 import Why from "../components/why_us";
 import Product from "../components/products";
-import { fifteen, fourteen, thirteen } from "../components/products/product-images";
+import {
+  fifteen,
+  fourteen,
+  thirteen,
+} from "../components/products/product-images";
 
 function Home() {
   return (
     <main>
       <SC.Section className={styles.Section}>
         <SC.FixedDiv className={styles.FixedDiv}></SC.FixedDiv>
-        <Categories className={styles.filter}/>
+        <Categories className={styles.filter} />
 
         <div className={styles.text_box}>
           <h1>
@@ -146,7 +147,7 @@ function Home() {
                   <img src={eleven} alt="" style={{ height: "60px" }} />
                 </div>
                 <div>
-                  <p className={styles.product_details}>  Knife Rack</p>
+                  <p className={styles.product_details}> Knife Rack</p>
                   <p style={{ margin: "0", color: "red", fontSize: "12px" }}>
                     #5,000
                   </p>
@@ -209,8 +210,8 @@ function Home() {
         </div>
       </div>
 
-      <Why/>
-      <Product/>
+      <Why />
+      <Product />
     </main>
   );
 }
