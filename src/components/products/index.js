@@ -138,7 +138,7 @@ const Product = () => {
                 product.isMatched ? styles.highlight : ""
               }`}
             >
-              {products.isMatched && (
+              {products.isMatched && ( 
                 <div className={styles.matchLabel}>Match</div>
               )}
               <div className={styles.image}>

@@ -78,15 +78,15 @@
 }
 
 .highlight {
-  border: 2px solid #00bfff; /* bright blue border */
+  border: 2px solid #00bfff;
   box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
   transform: scale(1.02);
   transition: all 0.3s ease;
 }
 .matchLabel {
   position: absolute;
-  /* top: 8px;
-  left: 8px; */
+  /* top: 10vh; */
+  /* left: 8px;  */
   background: #00bfff;
   color: chocolate;
   /* padding: 2px 6px; */
@@ -248,6 +248,10 @@
 @media screen and (max-width: 555px) {
   .left{
     display: none;
+  }
+  .chat{
+    left: 2vh;
+    top: 70vh;
   }
   .right{
     width: 95%;
