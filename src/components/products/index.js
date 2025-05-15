@@ -6,15 +6,18 @@ import Button from "../button";
 const Product = () => {
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [userPrompt, setUserPrompt] = useState("");
+  const [searchClicked, setSearchClicked] = useState(false);
+
 
   // const productRef = useRef<HTMLDivElement | null>
-  const productRef = useRef(null)
+  const productRef = useRef(null);
 
   useEffect(() => {
     setFilteredProducts(products);
   }, []);
 
   const handleFilter = () => {
+    setSearchClicked(true);
     const query = userPrompt.toLowerCase();
     const keywords = query.split(" ").filter((word) => word.length > 0);
 
@@ -128,7 +131,20 @@ const Product = () => {
         </div>
       </div>
 
-      <div className={styles.right}>
+      <div ref={productRef} className={styles.right}>
+        {searchClicked && filteredProducts.every((product) => !product.isMatched) && (
+            <p
+              style={{
+                padding: "2rem",
+                textAlign: "center",
+                color: "red",
+                position: "absolute",
+                top: "0",
+              }}
+            >
+              No products found matching your search.
+            </p>
+          )}
         <div className={styles.write}>
           <p
             style={{
@@ -146,7 +162,7 @@ const Product = () => {
           </span>
         </div>
 
-        <div ref={productRef} className={styles.product}>
+        <div className={styles.product}>
           {filteredProducts.map((product) => (
             <div
               key={product.id}
