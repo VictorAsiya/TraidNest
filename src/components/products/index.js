@@ -10,6 +10,7 @@ const Product = () => {
 
   // const productRef = useRef<HTMLDivElement | null>
   const productRef = useRef(null);
+   const productRef2 = useRef(null);
 
   useEffect(() => {
     setFilteredProducts(products);
@@ -42,10 +43,11 @@ const Product = () => {
     setFilteredProducts(withHighlight);
 
     // Scroll to product section
-
-    if (window.innerWidth < 768 && productRef.current) {
+    if (productRef.current) {
       productRef.current.scrollIntoView({ behavior: "smooth" });
-    } else {
+    }
+
+    if (productRef2.current) {
       productRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -165,7 +167,7 @@ const Product = () => {
           </span>
         </div>
 
-        <div className={styles.product}>
+        <div ref={productRef2} className={styles.product}>
           {filteredProducts.map((product) => (
             <div
               key={product.id}
