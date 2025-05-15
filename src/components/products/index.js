@@ -128,8 +128,7 @@ const Product = () => {
         </div>
       </div>
 
-      {/* Scroll target */}
-      <div ref={productRef} className={styles.right}>
+      <div className={styles.right}>
         <div className={styles.write}>
           <p
             style={{
@@ -147,7 +146,7 @@ const Product = () => {
           </span>
         </div>
 
-        <div className={styles.product}>
+        <div ref={productRef} className={styles.product}>
           {filteredProducts.map((product) => (
             <div
               key={product.id}
