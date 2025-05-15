@@ -8,7 +8,6 @@ const Product = () => {
   const [userPrompt, setUserPrompt] = useState("");
   const [searchClicked, setSearchClicked] = useState(false);
 
-
   // const productRef = useRef<HTMLDivElement | null>
   const productRef = useRef(null);
 
@@ -43,7 +42,10 @@ const Product = () => {
     setFilteredProducts(withHighlight);
 
     // Scroll to product section
-    if (productRef.current) {
+
+    if (window.innerWidth < 768 && productRef.current) {
+      productRef.current.scrollIntoView({ behavior: "smooth" });
+    } else {
       productRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
@@ -132,7 +134,8 @@ const Product = () => {
       </div>
 
       <div ref={productRef} className={styles.right}>
-        {searchClicked && filteredProducts.every((product) => !product.isMatched) && (
+        {searchClicked &&
+          filteredProducts.every((product) => !product.isMatched) && (
             <p
               style={{
                 padding: "2rem",
