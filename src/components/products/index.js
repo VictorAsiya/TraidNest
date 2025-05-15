@@ -43,9 +43,9 @@ const Product = () => {
     setFilteredProducts(withHighlight);
 
     // Scroll to product section
-    if (productRef.current) {
-      productRef.current.scrollIntoView({ behavior: "smooth" });
-    }
+    // if (productRef.current) {
+    //   productRef.current.scrollIntoView({ behavior: "smooth" });
+    // }
 
     if (productRef2.current) {
       productRef.current.scrollIntoView({ behavior: "smooth" });
