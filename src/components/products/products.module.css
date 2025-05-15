@@ -50,7 +50,7 @@
 .contents p {
   margin: 0;
   padding: 0;
-  font-size: 9px;
+  font-size: 8px;
   color: white;
   text-align: center;
 
@@ -85,15 +85,17 @@
 }
 .matchLabel {
   position: absolute;
-  /* top: 10vh; */
-  /* left: 8px;  */
-  background: #00bfff;
+  top: 3vh;
+  right: 5%; 
   color: chocolate;
-  /* padding: 2px 6px; */
   font-size: 1vh;
   border-radius: 4px;
   font-weight: bold;
   z-index: 200;
+}
+.matchLabel button{
+  padding: 2px 5px;
+  border-radius: 4px;
 }
 .product {
   height: 90%;
@@ -252,6 +254,10 @@
   .chat{
     left: 2vh;
     top: 70vh;
+  }
+  .chat .input input{
+    height: 4vh;
+    font-size: 14px;
   }
   .right{
     width: 95%;
