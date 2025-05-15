@@ -10,7 +10,7 @@ const Product = () => {
 
   // const productRef = useRef<HTMLDivElement | null>
   const productRef = useRef(null);
-   const productRef2 = useRef(null);
+  const productRef2 = useRef(null);
 
   useEffect(() => {
     setFilteredProducts(products);
@@ -135,7 +135,7 @@ const Product = () => {
         </div>
       </div>
 
-      <div ref={productRef} className={styles.right}>
+      <div className={styles.right}>
         {searchClicked &&
           filteredProducts.every((product) => !product.isMatched) && (
             <p
@@ -170,6 +170,7 @@ const Product = () => {
         <div ref={productRef2} className={styles.product}>
           {filteredProducts.map((product) => (
             <div
+              ref={productRef}
               key={product.id}
               className={`${styles.each} ${
                 product.isMatched ? styles.highlight : ""
