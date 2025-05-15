@@ -253,11 +253,12 @@
   }
   .chat{
     left: 2vh;
-    top: 70vh;
+    top: 78vh;
   }
   .chat .input input{
     height: 4vh;
     font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   .right{
     width: 95%;
