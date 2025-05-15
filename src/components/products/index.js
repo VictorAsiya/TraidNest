@@ -136,20 +136,7 @@ const Product = () => {
       </div>
 
       <div className={styles.right}>
-        {searchClicked &&
-          filteredProducts.every((product) => !product.isMatched) && (
-            <p
-              style={{
-                padding: "2rem",
-                textAlign: "center",
-                color: "red",
-                position: "absolute",
-                top: "0",
-              }}
-            >
-              No products found matching your search.
-            </p>
-          )}
+        
         <div className={styles.write}>
           <p
             style={{
@@ -160,6 +147,10 @@ const Product = () => {
           >
             Featured Products
           </p>
+          {searchClicked &&
+          filteredProducts.every((product) => !product.isMatched) && (
+            <p className={styles.found}>No products found matching your search.</p>
+          )}
           <span style={{ color: "var(--header-color)", cursor: "pointer" }}>
             <p>Popular</p>
             <p>Most Viewed</p>
