@@ -19,7 +19,15 @@ export const FixedDiv = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -10;
-  top: 0
+  top: 0;
+
+  @media (max-width: 768px) {
+    background: linear-gradient(rgba(19, 4, 5, 0.4), rgba(1, 1, 10, 0.8)),
+    url("/images/five.jpg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
 `;
 
 
