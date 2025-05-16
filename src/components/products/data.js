@@ -1,4 +1,5 @@
 import {
+  dp,
   thirteen,
   fourteen,
   fifteen,
@@ -12,6 +13,7 @@ import {
   twentythree,
 } from "./product-images";
 
+
 export const products = [
   {
     id: 1,
@@ -22,6 +24,9 @@ export const products = [
     category: "Electronics",
     condition: "Used",
     image: thirteen,
+    Location: "Enugu",
+    seller: "John Doe",
+    dp: dp,
   },
   {
     id: 2,
@@ -32,6 +37,9 @@ export const products = [
     category: "Musical Instruments",
     condition: "Used",
     image: fourteen,
+    Location: "Enugu",
+    seller: "John Doe",
+    dp: dp,
   },
   {
     id: 3,
@@ -42,6 +50,9 @@ export const products = [
     category: "Fashion",
     condition: "Used",
     image: fifteen,
+    Location: "Enugu",
+    seller: "John Doe",
+    dp: dp,
   },
   {
     id: 4,
@@ -52,6 +63,9 @@ export const products = [
     category: "Furniture",
     condition: "Used",
     image: sixteen,
+    Location: "Enugu",
+    seller: "John Doe",
+    dp: dp,
   },
   {
     id: 5,
@@ -62,6 +76,9 @@ export const products = [
     category: "Kitchen",
     condition: "Used",
     image: seventeen,
+    Location: "Enugu",
+    seller: "John Doe",
+    dp: dp,
   },
   {
     id: 6,
@@ -72,6 +89,9 @@ export const products = [
     category: "Home Appliance",
     condition: "Used",
     image: eighteen,
+    Location: "Enugu",
+    seller: "John Doe",
+    dp: dp,
   },
   {
     id: 7,
@@ -82,6 +102,9 @@ export const products = [
     category: "Cameras",
     condition: "Used",
     image: nineteen,
+    Location: "Enugu",
+    seller: "John Doe",
+    dp: dp,
   },
   {
     id: 8,
@@ -92,6 +115,9 @@ export const products = [
     category: "Accessories",
     condition: "Used",
     image: twenty,
+    Location: "Enugu",
+    seller: "John Doe",
+    dp: dp,
   },
   {
     id: 9,
@@ -102,6 +128,9 @@ export const products = [
     category: "Computers",
     condition: "Used",
     image: twentythree,
+    Location: "Enugu",
+    seller: "John Doe",
+    dp: dp,
   },
   {
     id: 10,
@@ -112,6 +141,8 @@ export const products = [
     category: "Gaming",
     condition: "Used",
     image: twentytwo,
+    Location: "Enugu",
+    seller: "John Doe",
+    dp: dp,
   },
-  
 ];

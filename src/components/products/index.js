@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./products.module.css";
 import { products } from "./data";
 import Button from "../button";
+import { twentyone } from "./product-images";
 
 const Product = () => {
   const [filteredProducts, setFilteredProducts] = useState(products);
@@ -174,9 +175,10 @@ const Product = () => {
               </div>
               <div className={styles.details}>
                 <span>
-                  <p>{product.name}</p>
-                  <p>{product.age}</p>
-                  <p style={{ color: "red" }}>
+                  <p style={{fontWeight: 'bold'}}>{product.name}</p>
+                  <p style={{color: 'rgba(0, 0, 0, .4)'}}>{product.age}</p>
+                  <p style={{fontSize: '11px'}}>seller: {product.seller} <img src={product.dp} alt="" height={'12px'}/></p>
+                  <p style={{ color: "chocolate", fontWeight: 'bold' }}>
                     #{product.price.toLocaleString()}
                   </p>
                 </span>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./navBar.module.css";
 import { Link } from "react-router-dom";
-import Categories from '../categories/'
+import Categories from "../categories/";
 
 const ReusableComponent = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -16,14 +16,10 @@ const ReusableComponent = () => {
 
   if (!isMobile) return null;
 
-  return (
-    <Categories className = {styles.Categories}/>
-  );
+  return <Categories className={styles.Categories} />;
 };
 
-
 function NavBar() {
-
   const [showNav, setShowNav] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -39,15 +35,14 @@ function NavBar() {
   const [show, setShow] = useState(false);
   const [active, setActive] = useState(false);
 
-  const handleClick = ()=>{
-    setShow(true)
-    setActive(true)
-  }
-  const handleClick2 = ()=>{
-    setShow(false)
-    setActive(true)
-  }
-
+  const handleClick = () => {
+    setShow(true);
+    setActive(true);
+  };
+  const handleClick2 = () => {
+    setShow(false);
+    setActive(true);
+  };
 
   return (
     <header className={styles.header}>
@@ -62,12 +57,10 @@ function NavBar() {
               position: "absolute",
               top: "0",
               zIndex: "8",
-              
             }}
           ></div>
         )}
         <nav className={`${styles.navBar} ${showNav ? styles.show : ""}`}>
-
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -84,40 +77,65 @@ function NavBar() {
             />
           </svg>
           <span className={styles.span}>
-            <h3 onClick={()=>handleClick2()} >Menu</h3>
-            <h3 onClick={()=>handleClick()}>Categories</h3>
+            <h3 onClick={() => handleClick2()}>Menu</h3>
+            <h3 onClick={() => handleClick()}>Categories</h3>
           </span>
 
-            {!show && <ul className={styles.ul_one}>
+          {!show && (
+            <ul className={styles.ul_one}>
               <li className={styles.home}>
-                <Link to="./" className={styles.line} onClick={()=>setShowNav(false)}>
+                <Link
+                  to="./"
+                  className={styles.line}
+                  onClick={() => setShowNav(false)}
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="./products" className={styles.line} onClick={()=>setShowNav(false)}>
+                <Link
+                  to="./products"
+                  className={styles.line}
+                  onClick={() => setShowNav(false)}
+                >
                   Products
                 </Link>
               </li>
               <li>
-                <Link to="./about" className={styles.no_line} onClick={()=>setShowNav(false)}>
+                <Link
+                  to="./about"
+                  className={styles.no_line}
+                  onClick={() => setShowNav(false)}
+                >
                   About
                 </Link>
               </li>
-            </ul>}
+            </ul>
+          )}
 
-            {!show && <ul className={styles.ul_two}>
+          {!show && (
+            <ul className={styles.ul_two}>
               <li>
-                <Link className={styles.line} onClick={()=>setShowNav(false)}>Track Your Order</Link>
+                <Link className={styles.line} onClick={() => setShowNav(false)}>
+                  Track Your Order
+                </Link>
               </li>
               <li>
-                <Link className={styles.line} onClick={()=>setShowNav(false)}>Contact Us</Link>
+                <Link className={styles.line} onClick={() => setShowNav(false)}>
+                  Contact Us
+                </Link>
               </li>
               <li>
-                <Link className={styles.no_line} onClick={()=>setShowNav(false)}>FAQ</Link>
+                <Link
+                  className={styles.no_line}
+                  onClick={() => setShowNav(false)}
+                >
+                  FAQ
+                </Link>
               </li>
-            </ul>}
-            {show && <ReusableComponent />}
+            </ul>
+          )}
+          {show && <ReusableComponent />}
         </nav>
       </div>
 
@@ -156,7 +174,12 @@ function NavBar() {
         </svg>
 
         <div className={styles.label_wrap}>
-          <input type="text" placeholder = 'Search for Products' />
+          <input
+            type="text"
+            placeholder="Search for Products"
+            // value={userPrompt}
+            // onChange={(e) => setUserPrompt(e.target.value)}
+          />
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -164,10 +187,11 @@ function NavBar() {
             strokeWidth="2"
             stroke="currentColor"
             className={styles.search}
+            // onClick={handleFilter}
           >
             <path
               stroke="round"
-              strokeLinejoin ="round"
+              strokeLinejoin="round"
               d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
             />
           </svg>
