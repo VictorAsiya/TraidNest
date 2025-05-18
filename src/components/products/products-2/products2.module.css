@@ -180,6 +180,11 @@
     justify-content: center;
 
   }
+  .each{
+    height: 30vh;
+    width: 40%;
+    /* background-color: aqua; */
+  }
   .images{
     height: 60%;
     /* background-color: aqua; */
@@ -229,6 +234,8 @@
   }
   .parent{
     width: 98%;
+    height: fit-content;
+    display: flex;
     overflow-x: scroll;
   }
 }
