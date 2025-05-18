@@ -230,7 +230,7 @@
   .p{
     position: absolute;
     top: -3.3vh;
-    left: 1vh;
+    left: 0;
     color: var(--header-color);
   }
   .parent{
