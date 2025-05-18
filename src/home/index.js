@@ -24,6 +24,7 @@ import {
   fourteen,
   thirteen,
 } from "../components/products/product-images";
+import Product2 from "../components/products/products-2";
 
 function Home() {
   return (
@@ -212,6 +213,7 @@ function Home() {
 
       <Why />
       <Product />
+      <Product2/>
     </main>
   );
 }
