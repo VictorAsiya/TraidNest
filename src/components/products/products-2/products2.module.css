@@ -229,7 +229,7 @@
   }
   .p{
     position: absolute;
-    top: -4vh;
+    top: -3.3vh;
     left: 1vh;
     color: var(--header-color);
   }
