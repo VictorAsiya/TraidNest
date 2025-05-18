@@ -109,7 +109,7 @@ function Product2() {
               </span>
             </div>
           </div>
-          <div className={styles.each}>
+          <div className={`${styles.each} ${styles.last}`}>
             {/* <div className={styles.matchLabel}>
               <Button title={"buy now"} />
             </div> */}
@@ -134,7 +134,7 @@ function Product2() {
       </div>
 
       <div className={styles.right}>
-        <p style={{ color: 'black', padding: '1vh 4vh', fontSize: '3vh', fontWeight: 'bold'}}>Latest In Gaming</p>
+        <p className={styles.p} style={{ color: 'black', padding: '1vh 4vh', fontSize: '3vh', fontWeight: 'bold'}}>Latest In Gaming</p>
         <div className={styles.side}>
             <div className={styles.img}>
                 <img src={six} alt=""/>
