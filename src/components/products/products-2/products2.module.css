@@ -229,8 +229,9 @@
   }
   .p{
     position: absolute;
-    top: 0;
+    top: -4vh;
     left: 1vh;
+    color: var(--header-color);
   }
   .parent{
     width: 98%;
