@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./products2.module.css";
 import Button from "../../button";
-import { four, one, three, two, five, six, seven, eight} from "./images";
+import { four, one, three, two, five, six, seven, eight } from "./images";
 
 function Product2() {
   return (
@@ -72,7 +72,7 @@ function Product2() {
               <Button title={"buy now"} />
             </div> */}
             <div className={styles.image}>
-              <img src={three} alt='' />
+              <img src={three} alt="" />
               <div className={styles.absolute}>
                 <p>Add to Cart</p>
               </div>
@@ -81,7 +81,15 @@ function Product2() {
               <span>
                 <p style={{ fontWeight: "bold" }}>Green Magic </p>
                 <p style={{ color: "rgba(0, 0, 0, .4)" }}>1 month</p>
-                <p style={{ fontSize: "11px", display: "flex", alignItems: "center", justifyContent: 'center', gap: '10px' }}>
+                <p
+                  style={{
+                    fontSize: "11px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "10px",
+                  }}
+                >
                   seller: Peter <img src={one} alt="" height={"20px"} />
                 </p>
                 <p style={{ color: "chocolate", fontWeight: "bold" }}>#400</p>
@@ -93,7 +101,7 @@ function Product2() {
               <Button title={"buy now"} />
             </div> */}
             <div className={styles.image}>
-              <img src={four} alt='' />
+              <img src={four} alt="" />
               <div className={styles.absolute}>
                 <p>Add to Cart</p>
               </div>
@@ -102,7 +110,14 @@ function Product2() {
               <span>
                 <p style={{ fontWeight: "bold" }}>Rich Dad/Poor Dad</p>
                 <p style={{ color: "rgba(0, 0, 0, .4)" }}>6 months</p>
-                <p style={{ fontSize: "11px", display: "flex", alignItems: "center", justifyContent: 'center' }}>
+                <p
+                  style={{
+                    fontSize: "11px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
                   seller: Joseph <img src={one} alt="" height={"20px"} />
                 </p>
                 <p style={{ color: "chocolate", fontWeight: "bold" }}>#2,500</p>
@@ -114,7 +129,7 @@ function Product2() {
               <Button title={"buy now"} />
             </div> */}
             <div className={styles.image}>
-              <img src={five} alt='' />
+              <img src={five} alt="" />
               <div className={styles.absolute}>
                 <p>Add to Cart</p>
               </div>
@@ -123,7 +138,15 @@ function Product2() {
               <span>
                 <p style={{ fontWeight: "bold" }}>Black & White</p>
                 <p style={{ color: "rgba(0, 0, 0, .4)" }}>Brand New</p>
-                <p style={{ fontSize: "11px", display: "flex", alignItems: "center", justifyContent: 'center', gap: '10px' }}>
+                <p
+                  style={{
+                    fontSize: "11px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "10px",
+                  }}
+                >
                   seller: Victor <img src={one} alt="" height={"20px"} />
                 </p>
                 <p style={{ color: "chocolate", fontWeight: "bold" }}>#4,200</p>
@@ -134,35 +157,60 @@ function Product2() {
       </div>
 
       <div className={styles.right}>
-        <p className={styles.p} style={{ color: 'black', padding: '1vh 4vh', fontSize: '3vh', fontWeight: 'bold'}}>Latest In Gaming</p>
-        <div className={styles.side}>
-            <div className={styles.img}>
-                <img src={six} alt=""/>
-            </div>
-            <div style={{color: 'black', fontSize: '12px'}}>
-                <p style={{fontSize: '15px'}}>Best Gaming <br /> gadgets</p>
-                <p style={{color: 'rgba(0, 0, 0, .4)'}}>2Months Old <br /> Enugu</p>
-            </div>
-        </div>
+        <p
+          className={styles.p}
+          style={{
+            color: "black",
+            padding: "1vh 4vh",
+            fontSize: "3vh",
+            fontWeight: "bold",
+          }}
+        >
+          Latest In Gaming
+        </p>
 
-        <div className={styles.side}>
+        <div className={styles.parent}>
+          <div className={styles.side}>
             <div className={styles.img}>
-                <img src={seven} alt=""/>
+              <img src={six} alt="" />
             </div>
-            <div style={{color: 'black', fontSize: '12px'}}>
-                <p style={{fontSize: '15px'}}>Spelling <br /> Pizza</p>
-                <p style={{color: 'rgba(0, 0, 0, .4)'}}>4Months Old <br /> Onitsha</p>
+            <div style={{ color: "black", fontSize: "12px" }}>
+              <p style={{ fontSize: "15px" }}>
+                Best Gaming <br /> gadgets
+              </p>
+              <p style={{ color: "rgba(0, 0, 0, .4)" }}>
+                2Months Old <br /> Enugu
+              </p>
             </div>
-        </div>
+          </div>
 
-        <div className={styles.side}>
+          <div className={styles.side}>
             <div className={styles.img}>
-                <img src={eight} alt=""/>
+              <img src={seven} alt="" />
             </div>
-            <div style={{color: 'black', fontSize: '12px'}}>
-                <p style={{fontSize: '15px'}}>Gangster <br /> Lord</p>
-                <p style={{color: 'rgba(0, 0, 0, .4)'}}>1year Old <br /> Lagos</p>
+            <div style={{ color: "black", fontSize: "12px" }}>
+              <p style={{ fontSize: "15px" }}>
+                Spelling <br /> Pizza
+              </p>
+              <p style={{ color: "rgba(0, 0, 0, .4)" }}>
+                4Months Old <br /> Onitsha
+              </p>
             </div>
+          </div>
+
+          <div className={styles.side}>
+            <div className={styles.img}>
+              <img src={eight} alt="" />
+            </div>
+            <div style={{ color: "black", fontSize: "12px" }}>
+              <p style={{ fontSize: "15px" }}>
+                Gangster <br /> Lord
+              </p>
+              <p style={{ color: "rgba(0, 0, 0, .4)" }}>
+                1year Old <br /> Lagos
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
