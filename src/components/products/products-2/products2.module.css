@@ -147,7 +147,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.side{
+.side {
   display: flex;
   gap: 2vh;
   align-items: center;
@@ -155,70 +155,72 @@
   padding-left: 15px;
   cursor: pointer;
 }
-.img{
+.img {
   width: 20vh;
   height: 15vh;
   border-radius: 1vh;
   /* background-color: aqua; */
 }
-.img img{
+.img img {
   height: 100%;
   width: 100%;
   border-radius: 3vh;
 }
 @media screen and (max-width: 555px) {
-  .main{
+  .main {
     height: fit-content;
     display: flex;
     flex-direction: column;
   }
-  .one{
+  .one {
     width: 90%;
     /* background-color: blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-
   }
-  .each{
+  .each {
     height: 30vh;
     width: 40%;
     /* background-color: aqua; */
   }
-  .images{
+  .absolute{
+    height: 30%;
+  }
+  .images {
     height: 60%;
     /* background-color: aqua; */
     display: flex;
     width: 90%;
   }
-  .images img{
+  .images img {
     /* height: 2%; */
     width: 45%;
   }
-  .two{
+  .two {
     /* background-color: aqua; */
     width: 100%;
     margin: 2vh 0;
   }
-  .last{
+  .last {
     display: none;
   }
-  .image{
+  .image {
     height: 25vh;
   }
-  .details{
+  .details {
     height: 17vh;
     /* background-color: black; */
   }
-  .image img{
+  .image img {
     height: 100% !important;
   }
-  .left{
+  .left {
     width: 95%;
     flex-direction: column;
     margin-top: 3vh;
   }
-  .right{
+  .right {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -227,16 +229,19 @@
     position: relative;
     border-radius: 0;
   }
-  .p{
+  .p {
     position: absolute;
     top: -3.3vh;
     left: 0;
+    font-weight: 800;
+    font-size: 20px;
     color: var(--header-color);
   }
-  .parent{
+  .parent {
     width: 98%;
     height: fit-content;
     display: flex;
     overflow-x: scroll;
+    padding-right: 1vh;
   }
 }
