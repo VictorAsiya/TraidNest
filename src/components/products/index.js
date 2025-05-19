@@ -5,6 +5,20 @@ import Button from "../button";
 import { twentyone } from "./product-images";
 
 const Product = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const images = Array.from(document.images);
+    const imagePromises = images.map((img) => {
+      if (img.complete) return Promise.resolve();
+      return new Promise((resolve) => {
+        img.onload = img.onerror = resolve;
+      });
+    });
+
+    Promise.all(imagePromises).then(() => setLoading(false));
+  }, []);
+
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [userPrompt, setUserPrompt] = useState("");
   const [searchClicked, setSearchClicked] = useState(false);
@@ -18,7 +32,20 @@ const Product = () => {
   const handleFilter = () => {
     setSearchClicked(true);
     const query = userPrompt.toLowerCase();
-    const stopWords = ["i", "need", "a", "an", "do", "you", "have", "cheap", "the", "want", "like", "to"];
+    const stopWords = [
+      "i",
+      "need",
+      "a",
+      "an",
+      "do",
+      "you",
+      "have",
+      "cheap",
+      "the",
+      "want",
+      "like",
+      "to",
+    ];
     const keywords = query
       .split(" ")
       .map((w) => w.trim())
@@ -51,7 +78,12 @@ const Product = () => {
   };
 
   return (
-    <div ref={productRef2}  className={styles.main}>
+    <div ref={productRef2} className={styles.main}>
+      {loading && (
+        <div className={styles.loading}>
+          <div className={styles.spinner} />
+        </div>
+      )}
       <div className={styles.chat}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -175,10 +207,15 @@ const Product = () => {
               </div>
               <div className={styles.details}>
                 <span>
-                  <p style={{fontWeight: 'bold'}}>{product.name}</p>
-                  <p style={{color: 'rgba(0, 0, 0, .4)'}}>{product.age}</p>
-                  <p style={{fontSize: '11px'}}>seller: {product.seller} <img src={product.dp} alt="" height={'12px'}/></p>
-                  <p style={{ color: "chocolate", fontWeight: 'bold' }}>
+                  <p style={{ fontWeight: "bold" }}>{product.name}</p>
+                  <p style={{ color: "rgba(0, 0, 0, .4)" }}>
+                    {product.age} ({product.Location})
+                  </p>
+                  <p style={{ fontSize: "11px" }}>
+                    seller: {product.seller}{" "}
+                    <img src={product.dp} alt="" height={"12px"} />
+                  </p>
+                  <p style={{ color: "chocolate", fontWeight: "bold" }}>
                     #{product.price.toLocaleString()}
                   </p>
                 </span>
