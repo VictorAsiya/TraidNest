@@ -107,7 +107,7 @@ function Footer() {
           </span>
           <span className={styles.span2}>
             <p style={{ display: "flex", alignItems: "center", gap: "1vh" }}>
-              <img src={two} alt="" style={{ height: "6vh" }} />
+              <img src={lock} alt="" style={{ height: "6vh" }} />
               Safety Payment
             </p>
             <span className={styles.payment}>

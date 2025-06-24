@@ -18,8 +18,13 @@ footer {
 .brand img {
   height: 4vh;
 }
+.mainGet{
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+}
 .get {
-  width: 15%;
+  width: 30%;
 }
 .get ul {
   display: flex;
