@@ -13,6 +13,7 @@
   --header-bg-color: rgba(139, 136, 136, 0.3);
   --product-color: chocolate;
 }
+
 body{
   margin: 0;
   padding: 0;
@@ -37,6 +38,18 @@ Button{
     font-weight: 600;
   }
 }
+
+.page-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex: 1;
+}
+
+
 
 
 

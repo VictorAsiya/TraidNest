@@ -6,5 +6,6 @@ import five from '../../../assets/section2-image/five.png'
 import six from '../../../assets/section2-image/six.jpg'
 import seven from '../../../assets/section2-image/seven.jpg'
 import eight from '../../../assets/section2-image/eight.jpg'
+import dp from '../../../assets/section1-image/six.png'
 
-export {one, two, three , four, five, six, seven, eight}
+export {one, two, three , four, five, six, seven, eight, dp}

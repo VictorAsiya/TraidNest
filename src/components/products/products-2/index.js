@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./products2.module.css";
 import Button from "../../button";
-import { four, one, three, two, five, six, seven, eight } from "./images";
+import { four, one, three, two, five, six, seven, eight, dp } from "./images";
 
 function Product2() {
   return (
@@ -90,7 +90,7 @@ function Product2() {
                     gap: "10px",
                   }}
                 >
-                  seller: Peter <img src={one} alt="" height={"20px"} />
+                  seller: Peter <img src={dp} alt="" height={"20px"} />
                 </p>
                 <p style={{ color: "chocolate", fontWeight: "bold" }}>#400</p>
               </span>

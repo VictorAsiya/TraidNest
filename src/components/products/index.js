@@ -7,17 +7,19 @@ import { twentyone } from "./product-images";
 const Product = () => {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const images = Array.from(document.images);
-    const imagePromises = images.map((img) => {
-      if (img.complete) return Promise.resolve();
-      return new Promise((resolve) => {
-        img.onload = img.onerror = resolve;
-      });
-    });
+  // Loading Effect on start
 
-    Promise.all(imagePromises).then(() => setLoading(false));
-  }, []);
+  // useEffect(() => {
+  //   const images = Array.from(document.images);
+  //   const imagePromises = images.map((img) => {
+  //     if (img.complete) return Promise.resolve();
+  //     return new Promise((resolve) => {
+  //       img.onload = img.onerror = resolve;
+  //     });
+  //   });
+
+  //   Promise.all(imagePromises).then(() => setLoading(false));
+  // }, []);
 
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [userPrompt, setUserPrompt] = useState("");
@@ -79,11 +81,11 @@ const Product = () => {
 
   return (
     <div ref={productRef2} className={styles.main}>
-      {loading && (
+      {/* {loading && (
         <div className={styles.loading}>
           <div className={styles.spinner} />
         </div>
-      )}
+      )} */}
       <div className={styles.chat}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

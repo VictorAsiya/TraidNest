@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-export const Section = styled.section`
-  height: 100vh;
-  width: 100%;
-`;
 export const Button = styled.button`
   padding: 5px 10px;
   background-color: var(--button);
