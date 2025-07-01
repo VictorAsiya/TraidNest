@@ -157,17 +157,7 @@ function Product2() {
       </div>
 
       <div className={styles.right}>
-        <p
-          className={styles.p}
-          style={{
-            color: "black",
-            padding: "1vh 4vh",
-            fontSize: "3vh",
-            fontWeight: "bold",
-          }}
-        >
-          Latest In Gaming
-        </p>
+        <p className={styles.p}>Latest In Gaming</p>
 
         <div className={styles.parent}>
           <div className={styles.side}>

@@ -18,7 +18,7 @@ footer {
 .brand img {
   height: 4vh;
 }
-.mainGet{
+.mainGet {
   width: 45%;
   display: flex;
   justify-content: space-around;
@@ -41,9 +41,9 @@ footer {
     color: var(--product-color);
   }
 }
-.subscribe{
-    width: 54%;
-    margin-top: 5vh;
+.subscribe {
+  width: 54%;
+  margin-top: 5vh;
 }
 .subscribe .span1 {
   display: flex;
@@ -55,8 +55,8 @@ footer {
   border-radius: 2vh;
   color: rgba(194, 194, 194, 0.697);
 }
-.subscribe .span1 h3{
-    color: var(--product-color);
+.subscribe .span1 h3 {
+  color: var(--product-color);
 }
 .subscribe .span1 input {
   padding: 0 10px;
@@ -77,38 +77,67 @@ footer {
     background-color: var(--product-color);
   }
 }
-.payment{
+.mail{
+  display: flex;
+}
+.lock img{
+  height: 4vh;
+}
+.payment {
   display: flex;
   /* justify-content: center; */
   align-items: center;
   margin: 0;
 }
-.payment img{
+.payment img {
   height: 8vh;
+}
+.largeImage {
+  height: 6vh;
+}
+.largeImage2 {
+  height: 4.6vh;
 }
 
 @media screen and (max-width: 768px) {
-  .parent{
+  .parent {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .mainGet{
+  .logo{
+    height: 12vh;
+  }
+  .brand img{
+    height: 3vh;
+  }
+  .mainGet {
     display: flex;
     justify-content: space-around;
     /* background-color: aqua; */
     width: 95%;
   }
-  .get{
+  .get {
     width: 30%;
   }
-  .subscribe{
+  .subscribe {
     width: 95%;
   }
-  .span2{
+  .mail{
+  display: flex;
+  flex-direction: column;
+}
+  .span2 {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1vh;
+  }
+  .payment img {
+    height: 4vh;
+  }
+  .subscribe .span1 input, .subscribe .span1 button {
+    height: 5vh;
   }
 }

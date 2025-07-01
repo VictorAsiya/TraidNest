@@ -1,10 +1,15 @@
 .main {
-  height: 150vh;
+  height: fit-content;
   width: 100%;
   background-color: var(--secondary);
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+}
+.p {
+  color: var(--header-color);
+  font-weight: 600;
+  font-size: 3vh;
+  padding-left: 2vh;
 }
 .loading {
   position: fixed;
@@ -32,81 +37,11 @@
   }
 }
 
-.left {
-  height: 90%;
-  width: 20%;
-  background-color: var(--product);
-  border-radius: 3vh;
-  background: url(../../assets/section1-image/pngegg6.png),
-    linear-gradient(rgba(12, 26, 180, 0.5), rgba(9, 9, 130, 0.5));
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: flex;
-  justify-content: center;
-}
-.container {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40% 0;
-}
-.left .contents {
-  background-color: var(--header-color);
-  border-radius: 50%;
-  height: 13vh;
-  width: 13vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.battery {
-  height: 5vh;
-  width: 5vh;
-  padding: 0;
-}
-.container span {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.contents p {
-  margin: 0;
-  padding: 0;
-  font-size: 8px;
-  color: white;
-  text-align: center;
-}
-.right {
-  height: 90%;
-  width: 78%;
-  position: relative;
-  /* background-color: rgb(255, 153, 0) */
-}
-.write {
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 5%;
-  height: 10%;
-}
-.write span {
-  display: flex;
-  gap: 30px;
-}
-.write span p:hover {
-  color: var(--product-color);
-  cursor: pointer;
-}
 .found {
   text-align: center;
   color: red;
-  position: absolute;
-  top: 6vh;
+  /* position: absolute; */
+  /* top: 6vh; */
 }
 
 .highlight {
@@ -130,16 +65,21 @@
   border-radius: 4px;
 }
 .product {
-  height: 90%;
-  width: 100%;
-  /* background-color: pink; */
+  width: 98%;
   display: grid;
-  justify-items: center;
-  grid-template-columns: auto auto auto auto auto;
+  /* place-items: center;  */
+  /* justify-items: center; */
+  align-content: center;
+  padding-left: 1%;
+  grid-template-columns: repeat(7, auto); 
+  gap: 2vh;
+  padding-bottom: 5vh;
+  height: fit-content;
 }
+
 .each {
-  height: 96%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   background-color: var(--product);
   border-radius: 3vh;
   display: flex;
@@ -161,9 +101,7 @@
   overflow: hidden;
 }
 .image img {
-  /* height: 100%; */
   width: 100%;
-  /* object-fit: cover; */
 }
 .image:hover .absolute {
   opacity: 0.9;
@@ -196,25 +134,22 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* background-color: orangered; */
   color: black;
 }
 .details span {
   display: flex;
-  flex-direction: column ;
+  flex-direction: column;
   justify-content: space-between;
   border-radius: 3vh;
   width: 100%;
   height: 100%;
   padding: 10px 0;
-  /* background-color: #00bfff; */
 }
 .details span p {
   margin: 0;
   padding: 0;
   font-size: 13px;
 }
-
 .chat {
   display: flex;
   position: fixed;
@@ -265,53 +200,14 @@
   .main {
     height: fit-content;
   }
-  .left {
-    height: 120vh;
-    width: 35%;
-  }
-  .right {
-    height: 120vh;
-    overflow-y: scroll;
-  }
   .product {
     grid-template-columns: auto auto auto;
     height: fit-content;
   }
 }
 @media screen and (max-width: 555px) {
-  
-  .left {
-    display: none;
-  }
   .found {
-  top: 3.2vh;
-}
-  .chat {
-    left: 2vh;
-    top: 78vh;
-  }
-  .chat .input input {
-    height: 4vh;
-    font-size: 14px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  }
-  .right {
-    width: 95%;
-    height: 100%;
-  }
-  .write {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 3vh;
-    margin-top: 0;
-  }
-  .write p {
-    margin: 0;
-  }
-  .write span {
-    font-size: 14px;
+    top: 3.2vh;
   }
   .main {
     padding-top: 0;
@@ -328,11 +224,19 @@
     height: 30vh;
   }
   .image {
-    /* background-color: aqua; */
     border-radius: 15px;
   }
   .absolute {
     height: 5vh;
     border-radius: 3px;
+  }
+  .chat {
+    left: 2vh;
+    top: 78vh;
+  }
+  .chat .input input {
+    height: 4vh;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   }
 }

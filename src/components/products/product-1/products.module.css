@@ -1,0 +1,344 @@
+.main {
+  height: 150vh;
+  width: 100%;
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.loading {
+  position: fixed;
+  inset: 0;
+  background: rgba(39, 37, 37, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ccc;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.left {
+  height: 90%;
+  width: 20%;
+  background-color: var(--product);
+  border-radius: 3vh;
+  background: url(../../../assets/section1-image/pngegg6.png),
+    linear-gradient(rgba(12, 26, 180, 0.5), rgba(9, 9, 130, 0.5));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40% 0;
+}
+.left .contents {
+  background-color: var(--header-color);
+  border-radius: 50%;
+  height: 13vh;
+  width: 13vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.battery {
+  height: 5vh;
+  width: 5vh;
+  padding: 0;
+}
+.container span {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.contents p {
+  margin: 0;
+  padding: 0;
+  font-size: 8px;
+  color: white;
+  text-align: center;
+}
+.right {
+  height: 90%;
+  width: 78%;
+  position: relative;
+  /* background-color: rgb(255, 153, 0) */
+}
+.write {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 10%;
+}
+.write span {
+  display: flex;
+  gap: 30px;
+}
+.write span p:hover {
+  color: var(--product-color);
+  cursor: pointer;
+}
+.write .p {
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--header-color);
+
+}
+.found {
+  text-align: center;
+  color: red;
+  position: absolute;
+  top: 6vh;
+}
+
+.highlight {
+  border: 2px solid #00bfff;
+  box-shadow: 0 0 10px rgba(0, 191, 255, 0.5);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+.matchLabel {
+  position: absolute;
+  top: 3vh;
+  right: 5%;
+  color: chocolate;
+  font-size: 1vh;
+  border-radius: 4px;
+  font-weight: bold;
+  z-index: 200;
+}
+.matchLabel button {
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+.product {
+  height: 90%;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: auto auto auto auto auto;
+}
+.each {
+  height: 96%;
+  width: 90%;
+  background-color: var(--product);
+  border-radius: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.image {
+  height: 65%;
+  width: 80%;
+  padding-top: 10px;
+  border-bottom-left-radius: 3vh;
+  border-bottom-right-radius: 3vh;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.image img {
+  /* height: 100%; */
+  width: 100%;
+  /* object-fit: cover; */
+}
+.image:hover .absolute {
+  opacity: 0.9;
+  transform: translateY(0);
+}
+.absolute {
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+  width: 100%;
+  border-bottom-left-radius: 3vh;
+  border-bottom-right-radius: 3vh;
+  background-color: var(--product-color);
+  opacity: 0;
+  transform: translateY(30%);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  border-top: 5px solid rgba(75, 71, 71, 0.642);
+}
+
+.details {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+.details span {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 3vh;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+.details span p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+/* .chat {
+  display: flex;
+  position: fixed;
+  color: chocolate;
+  top: 80vh;
+  left: 5vh;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.chat:hover .input,
+.chat:focus-within .input {
+  display: inline-block;
+}
+.chat:hover svg,
+.chat:focus-within svg {
+  transform: scaleX(-1);
+}
+
+.chat svg {
+  height: 40px;
+  display: flex;
+  top: 40vh;
+  width: 40px;
+  z-index: 20;
+}
+
+.input {
+  display: none;
+  margin: 6vh 0 0 0vh;
+}
+
+.input input {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 5px;
+  outline: none;
+}
+.Button {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+} */
+
+@media screen and (max-width: 768px) {
+  .main {
+    height: fit-content;
+  }
+  .left {
+    height: 120vh;
+    width: 35%;
+  }
+  .right {
+    height: 120vh;
+    overflow-y: scroll;
+  }
+  .product {
+    grid-template-columns: auto auto auto;
+    height: fit-content;
+  }
+}
+@media screen and (max-width: 555px) {
+  .left {
+    display: none;
+  }
+  .found {
+    top: 3.2vh;
+  }
+  /* .chat {
+    left: 2vh;
+    top: 78vh;
+  }
+  .chat .input input {
+    height: 4vh;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  } */
+  .right {
+    width: 95%;
+    height: 100%;
+  }
+  .write {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3vh;
+    margin-top: 0;
+  }
+  .write p {
+    margin: 0;
+  }
+  .write .p{
+    margin-top: 2vh;
+    font-weight: 600;
+    font-size: 16px;
+
+  }
+  .write span {
+    font-size: 14px;
+  }
+  .main {
+    padding-top: 0;
+    height: fit-content;
+  }
+  .product {
+    grid-template-columns: auto auto;
+    height: fit-content;
+    gap: 3vh;
+    padding-top: 20px;
+    border-radius: 20px;
+  }
+  .each {
+    height: 30vh;
+  }
+  .image {
+    /* background-color: aqua; */
+    border-radius: 15px;
+  }
+  .absolute {
+    height: 5vh;
+    border-radius: 3px;
+  }
+}

@@ -57,8 +57,10 @@
     gap: 4vh;
     height: 100vh;
   }
+
   .p {
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 16px;
   }
   .span p {
     font-size: 13px;

@@ -147,6 +147,12 @@
   flex-direction: column;
   justify-content: center;
 }
+.p {
+  color: black;
+  padding: 1vh 4vh;
+  font-size: 3vh;
+  font-weight: bold;
+}
 .side {
   display: flex;
   gap: 2vh;
@@ -184,7 +190,7 @@
     width: 40%;
     /* background-color: aqua; */
   }
-  .absolute{
+  .absolute {
     height: 30%;
   }
   .images {
@@ -231,11 +237,12 @@
   }
   .p {
     position: absolute;
-    top: -3.3vh;
+    top: -1.3vh;
     left: 0;
-    font-weight: 800;
-    font-size: 20px;
+    padding-left: 2vh;
     color: var(--header-color);
+    font-weight: 600;
+    font-size: 16px;
   }
   .parent {
     width: 98%;
@@ -243,5 +250,9 @@
     display: flex;
     overflow-x: scroll;
     padding-right: 1vh;
+  }
+  .side{
+    /* background-color: aqua; */
+    padding: 1vh 2vh;
   }
 }

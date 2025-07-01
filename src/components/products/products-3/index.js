@@ -1,6 +1,21 @@
 import React from "react";
 import styles from "./product3.module.css";
-import { one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen } from "./images";
+import {
+  one,
+  two,
+  three,
+  four,
+  five,
+  six,
+  seven,
+  eight,
+  nine,
+  ten,
+  eleven,
+  twelve,
+  thirteen,
+  fourteen,
+} from "./images";
 import Button from "../../button";
 
 function Product3() {
@@ -8,17 +23,7 @@ function Product3() {
     <main className={styles.main}>
       <div className={styles.container}>
         <div className={styles.one}>
-          <p
-            className={styles.p}
-            style={{
-              color: "black",
-              padding: "1vh 4vh",
-              fontSize: "3vh",
-              fontWeight: "bold",
-            }}
-          >
-            Latest Products
-          </p>
+          <p className={styles.p}>Latest Products</p>
 
           <div className={styles.parent}>
             <div className={styles.side}>
@@ -98,31 +103,15 @@ function Product3() {
         </div>
 
         <div className={styles.three}>
-          <div style={{height: '10%', padding: '0 4vh', display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '2vh' }}>
-            <p
-              style={{
-                color: "black",
-                fontSize: "2.5vh",
-                bottom: '0'
-              }}
-            >
-              Top 100 Appliancies
-            </p>
+          <div className={styles.textDiv}>
+            <p className={styles.pa}>Top 100 Appliancies</p>
 
-            <p
-              className={styles.text}
-              style={{
-                color: "black",
-                fontSize: "14px",
-              }}
-            >
-              Shop More
-            </p>
+            <p className={styles.pb}>Shop More</p>
           </div>
 
-          <div style={{height: '90%', display: 'flex'}}>
+          <div style={{ height: "90%", display: "flex" }}>
             <div className={styles.threeone}>
-                <div className={styles.side}>
+              <div className={styles.side}>
                 <div className={styles.img}>
                   <img src={five} alt="" />
                 </div>
@@ -179,7 +168,7 @@ function Product3() {
               </div>
             </div>
             <div className={styles.threetwo}>
-                <div className={styles.side}>
+              <div className={styles.side}>
                 <div className={styles.img}>
                   <img src={eleven} alt="" />
                 </div>
@@ -230,7 +219,7 @@ function Product3() {
                 <div style={{ color: "black", fontSize: "12px" }}>
                   <p style={{ fontSize: "15px" }}>Tea Mixer</p>
                   <p style={{ color: "rgba(0, 0, 0, .4)" }}>
-                     brand new <br /> Awka
+                    brand new <br /> Awka
                   </p>
                 </div>
               </div>

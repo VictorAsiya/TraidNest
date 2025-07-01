@@ -11,6 +11,36 @@
   align-items: center;
   justify-content: space-around;
 }
+.p {
+  color: var(--header-color);
+  padding: 1vh 4vh;
+  font-size: 3vh;
+  font-weight: bold;
+}
+.pa {
+  color: var(--header-color);
+  font-size: 3vh;
+  font-weight: bold;
+  font-size: 2.5vh;
+  bottom: 0;
+}
+
+.pb {
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--header-color);
+
+  &&::after {
+    content: "";
+    width: 0%;
+    background-color: chocolate;
+  }
+}
+
+.pb:hover::after {
+  width: 100%;
+}
+
 .one {
   width: 20%;
   height: 100%;
@@ -169,6 +199,13 @@
   flex-direction: column;
   border-radius: 3vh;
 }
+.textDiv {
+  height: 10%;
+  padding: 0 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .threeone,
 .threetwo {
   height: 95%;
@@ -179,18 +216,7 @@
   justify-content: center;
   align-items: center;
 }
-.text {
-  cursor: pointer;
 
-  &&::after {
-    content: "";
-    width: 0%;
-    background-color: chocolate;
-  }
-}
-.text:hover::after {
-  width: 100%;
-}
 .threeone {
   position: relative;
 }
@@ -203,7 +229,7 @@
   position: relative;
 }
 @media screen and (max-width: 768px) {
-  .main{
+  .main {
     height: fit-content;
     /* background-color: yellow; */
     border-top: 1px solid grey;
@@ -216,13 +242,13 @@
     /* background-color: aqua; */
     /* margin-bottom: 20vh; */
   }
-   .one {
+  .one {
     width: 94%;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .side{
+  .side {
     width: 95%;
   }
   .two {
@@ -232,12 +258,12 @@
     justify-content: space-between;
     align-items: center;
   }
-  .right1{
+  .right1 {
     height: 42vh;
     width: 62%;
   }
 
-  .three{
+  .three {
     width: 93%;
   }
 }
@@ -252,15 +278,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2vh 0;
+    padding: 0;
   }
-  .side{
+  .side {
     width: 95%;
   }
   .img {
-  width: 8vh;
-  border-radius: 1vh;
-}
+    width: 8vh;
+    border-radius: 1vh;
+  }
   .each {
     height: 30vh;
     width: 40%;
@@ -292,14 +318,14 @@
     flex-direction: column;
     width: 40%;
   }
-  .left .each{
+  .left .each {
     width: 100%;
   }
-  .left .each .Button{
+  .left .each .Button {
     top: 2vh;
     left: 10px;
   }
-  .right1{
+  .right1 {
     width: 55%;
     height: 30vh;
   }
@@ -312,13 +338,19 @@
     position: relative;
     border-radius: 0;
   }
-  .p {
-    position: absolute;
-    top: -3.3vh;
-    left: 0;
-    font-weight: 800;
-    font-size: 20px;
-    color: var(--header-color);
+  .textDiv{
+    padding: 0 15px;
+  }
+  .p{
+    padding-left: 2vh;
+  }
+  .pa, .p {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .pb {
+    font-weight: 600;
+    font-size: 12px;
   }
   .parent {
     width: 98%;

@@ -45,9 +45,9 @@ function Footer() {
         </Link>
         <span className={styles.brand}>
           <p>Social Links</p>
-          <img src={facebook} alt="" style={{ height: "5.7vh" }} />
+          <img src={facebook} alt="" />
           <img src={instagram} alt="" />
-          <img src={twitter} alt="" style={{ height: "5vh" }} />
+          <img src={twitter} alt="" />
           <img src={youtube} alt="" />
         </span>
       </div>
@@ -96,24 +96,28 @@ function Footer() {
             <div>
               <h3 style={{}}>Subscribe to our Newsletter</h3>
             </div>
-            <div style={{ display: "flex" }}>
+            <div className={styles.mail}>
               <p>
                 Join our mailing list to receive any latest updates and
                 promotions.
               </p>
+              <div style={{display: 'flex'}}>
+
               <input type="text" />
               <Button title="Sign Up" />
+              </div>
             </div>
           </span>
           <span className={styles.span2}>
-            <p style={{ display: "flex", alignItems: "center", gap: "1vh" }}>
-              <img src={lock} alt="" style={{ height: "6vh" }} />
+            <p style={{ display: "flex", alignItems: "center", gap: "1vh" }} className={styles.lock}>
+              
+              <img src={lock} alt="" />
               Safety Payment
             </p>
             <span className={styles.payment}>
               <img src={one} alt="" />
-              <img src={two} alt="" style={{ height: "6vh" }} />
-              <img src={three} alt="" style={{ height: "4.6vh" }} />
+              <img src={two} alt=""  />
+              <img src={three} alt=""   />
               <img src={four} alt="" />
             </span>
           </span>

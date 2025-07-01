@@ -8,8 +8,4 @@ import three from '../../assets/payment/three.png'
 import four from '../../assets/payment/four.png'
 import lock from '../../assets/payment/lock.png'
 
-
-
-
-
 export {facebook, instagram, twitter, youtube, one, two, three, four, lock}

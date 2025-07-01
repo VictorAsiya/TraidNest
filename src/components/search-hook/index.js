@@ -1,4 +1,3 @@
-// src/hooks/useProductFilter.ts
 import { useState, useEffect, useRef } from "react";
 import { products } from "../products/data";
 
