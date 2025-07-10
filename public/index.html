@@ -35,13 +35,51 @@
     -->
       <div id="chatbot-icon">💬</div>
 
-<div id="chatbot-window" class="hidden">
-  <div id="chat-messages"></div>
-  <form id="chat-form">
-    <input type="text" id="chat-input" placeholder="Ask about a product..." />
-    <button type="submit">Send</button>
-  </form>
-</div>
+ <div id="chatbot-window" class="hidden">
+   <div id="chat-messages"></div>
+   <form id="chat-form">
+     <input type="text" id="chat-input" placeholder="Ask about a product..." />
+     <button type="submit">Send</button>
+   </form>
+ </div>
+
+ ...
+  <!-- Your chatbot UI here -->
+
+  <script>
+    // JavaScript logic starts here
+    const chatIcon = document.getElementById('chatbot-icon');
+    const chatWindow = document.getElementById('chatbot-window');
+    const chatForm = document.getElementById('chat-form');
+    const chatInput = document.getElementById('chat-input');
+    const chatMessages = document.getElementById('chat-messages');
+
+    chatIcon.addEventListener('click', () => {
+      chatWindow.classList.toggle('hidden');
+    });
+
+    chatForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const prompt = chatInput.value.trim();
+      if (!prompt) return;
+
+      chatMessages.innerHTML += `<div><strong>You:</strong> ${prompt}</div>`;
+      chatInput.value = "";
+
+      try {
+        const response = await fetch('/api/generate-description', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ prompt })
+        });
+        const data = await response.json();
+        chatMessages.innerHTML += `<div><strong>Bot:</strong> ${data.result}</div>`;
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      } catch (err) {
+        chatMessages.innerHTML += `<div><strong>Bot:</strong> ❌ Error connecting to server.</div>`;
+      }
+    });
+  </script>
 
   </body>
 </html>
