@@ -5,10 +5,7 @@ import {
   instagram,
   twitter,
   youtube,
-  one,
-  two,
-  three,
-  four,
+  paymentCards,
   lock,
 } from "./image";
 import Button from "../button";
@@ -58,7 +55,8 @@ function Footer() {
           marginTop: "5vh",
           borderBottom: "1px solid grey",
           paddingBottom: "5vh",
-        }} className={styles.parent}
+        }}
+        className={styles.parent}
       >
         <div className={styles.mainGet}>
           <div className={styles.get}>
@@ -101,24 +99,22 @@ function Footer() {
                 Join our mailing list to receive any latest updates and
                 promotions.
               </p>
-              <div style={{display: 'flex'}}>
-
-              <input type="text" />
-              <Button title="Sign Up" />
+              <div style={{ display: "flex" }}>
+                <input type="text" />
+                <Button title="Sign Up" />
               </div>
             </div>
           </span>
           <span className={styles.span2}>
-            <p style={{ display: "flex", alignItems: "center", gap: "1vh" }} className={styles.lock}>
-              
+            <p
+              style={{ display: "flex", alignItems: "center", gap: "1vh" }}
+              className={styles.lock}
+            >
               <img src={lock} alt="" />
               Safety Payment
             </p>
             <span className={styles.payment}>
-              <img src={one} alt="" />
-              <img src={two} alt=""  />
-              <img src={three} alt=""   />
-              <img src={four} alt="" />
+              <img src={paymentCards} alt="" height={'10vh'}/>
             </span>
           </span>
         </div>

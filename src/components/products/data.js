@@ -236,7 +236,7 @@ export const product4Data = [
     name: "Next Level Style",
     image: thirtyfour,
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. molestias corrupti doloribus umquam.",
-    bg: 'var(--product)'
+    bg: 'var(--background)'
   },
    {
     id: 2,
@@ -250,7 +250,7 @@ export const product4Data = [
     name: "Beauty Hair Dryer",
     image: thirtysix,
     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. molestias corrupti doloribus umquam.",
-    bg: 'var(--product)'
+    bg: 'var(--background)'
   },
 ];
 

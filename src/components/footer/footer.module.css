@@ -83,14 +83,19 @@ footer {
 .lock img{
   height: 4vh;
 }
-.payment {
+/* .payment{
+  background-color: aqua;
   display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  margin: 0;
-}
+  justify-content: start;
+} */
+ /* .span2{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: bisque;
+ } */
 .payment img {
-  height: 8vh;
+  height: 15vh;
 }
 .largeImage {
   height: 6vh;
@@ -135,7 +140,7 @@ footer {
     margin-top: 1vh;
   }
   .payment img {
-    height: 4vh;
+    height: 8vh;
   }
   .subscribe .span1 input, .subscribe .span1 button {
     height: 5vh;

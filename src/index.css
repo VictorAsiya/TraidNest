@@ -1,8 +1,8 @@
 :root {
   --primary: #1D4ED8;
   --secondary: #efefef;
-  --product: rgb(255, 255, 255);
-  --background: #f7f7f7;
+  --product: rgba(255, 255, 255, 0.54);
+  --background: #dfd8d8;
   --dark-text: #111827;
   --light-text: #ffffff;
   --hover: #0D9488;

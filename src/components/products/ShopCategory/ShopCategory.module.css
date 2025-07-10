@@ -1,5 +1,5 @@
 .parent {
-  background-color: var(--secondary);
+  background-color: var(--background);
   height: fit-content;
   padding: 1vh 0 6vh 0;
 }

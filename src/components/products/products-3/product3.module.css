@@ -1,11 +1,14 @@
 .main {
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center ;
+  align-items: center;
   background-color: var(--secondary);
 }
 .container {
-  height: 80vh;
-  padding: 5vh 0;
+  height: 90%;
+  padding: 2vh 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -44,7 +47,7 @@
 .one {
   width: 20%;
   height: 100%;
-  background-color: var(--product);
+  background-color: var(--background);
   border-radius: 3vh;
   display: flex;
   flex-direction: column;
@@ -53,7 +56,7 @@
 .right {
   width: 20%;
   height: 100%;
-  background-color: var(--product);
+  background-color: var(--background);
   border-radius: 3vh;
   display: flex;
   flex-direction: column;
@@ -87,7 +90,7 @@
 .two {
   width: 45%;
   height: 100%;
-  background-color: var(--product);
+  background-color: var(--background);
   border-radius: 3vh;
   display: flex;
 }
@@ -102,7 +105,7 @@
 .each {
   height: 70%;
   width: 80%;
-  background-color: var(--product);
+  /* background-color: var(--product); */
   border-radius: 3vh;
   display: flex;
   flex-direction: column;
@@ -122,6 +125,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: var(--product);
 }
 .image img {
   width: 100%;
@@ -194,7 +198,7 @@
 .three {
   width: 30%;
   height: 100%;
-  background-color: var(--product);
+  background-color: var(--background);
   display: flex;
   flex-direction: column;
   border-radius: 3vh;
