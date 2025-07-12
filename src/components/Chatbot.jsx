@@ -37,6 +37,7 @@ function Chatbot() {
 
       {isOpen && (
         <div id="chatbot-window">
+          <div className="chatbot-greeting">👋 Hey, my name is <strong>Traid</strong>. How may I assist you?</div>
           <div id="chat-messages">
             {messages.map((msg, idx) => (
               <div key={idx}><strong>{msg.sender}:</strong> {msg.text}</div>

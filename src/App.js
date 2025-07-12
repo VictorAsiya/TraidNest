@@ -7,7 +7,7 @@ import About from "./about";
 import "./App.css";
 import Chatbot from './components/Chatbot';
 
-ffunction App() {
+function App() {
   return (
     <>
       <NavBar />
