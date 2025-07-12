@@ -4,7 +4,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #007bff;
+  background: #ff6f00;
   color: white;
   font-size: 24px;
   width: 50px;
@@ -14,7 +14,7 @@
   line-height: 50px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 #chatbot-icon:hover {
@@ -31,7 +31,7 @@
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   padding: 10px;
-  display: flex;
+  display: none;
   flex-direction: column;
   z-index: 9999;
 }
