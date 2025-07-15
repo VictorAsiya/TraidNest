@@ -1,21 +1,7 @@
 import React from "react";
 import styles from "./product3.module.css";
-import {
-  one,
-  two,
-  three,
-  four,
-  five,
-  six,
-  seven,
-  eight,
-  nine,
-  ten,
-  eleven,
-  twelve,
-  thirteen,
-  fourteen,
-} from "./images";
+import { latestProduct, topHundredLeft, topHundredRight } from "../data";
+import { two } from "./images";
 import Button from "../../button";
 
 function Product3() {
@@ -26,41 +12,19 @@ function Product3() {
           <p className={styles.p}>Latest Products</p>
 
           <div className={styles.parent}>
-            <div className={styles.side}>
-              <div className={styles.img}>
-                <img src={two} alt="" />
+            {latestProduct.map((latestProduct) => (
+              <div className={styles.side} key={latestProduct.id}>
+                <div className={styles.img}>
+                  <img src={latestProduct.image} alt="" />
+                </div>
+                <div style={{ color: "black", fontSize: "12px" }}>
+                  <p style={{ fontSize: "15px" }}>{latestProduct.name}</p>
+                  <p style={{ color: "rgba(0, 0, 0, .4)" }}>
+                    {latestProduct.age} <br /> {latestProduct.Location}
+                  </p>
+                </div>
               </div>
-              <div style={{ color: "black", fontSize: "12px" }}>
-                <p style={{ fontSize: "15px" }}>Cat tent</p>
-                <p style={{ color: "rgba(0, 0, 0, .4)" }}>
-                  2Months Old <br /> Enugu
-                </p>
-              </div>
-            </div>
-
-            <div className={styles.side}>
-              <div className={styles.img}>
-                <img src={three} alt="" />
-              </div>
-              <div style={{ color: "black", fontSize: "12px" }}>
-                <p style={{ fontSize: "15px" }}>Microwave</p>
-                <p style={{ color: "rgba(0, 0, 0, .4)" }}>
-                  4Months Old <br /> Onitsha
-                </p>
-              </div>
-            </div>
-
-            <div className={styles.side}>
-              <div className={styles.img}>
-                <img src={four} alt="" />
-              </div>
-              <div style={{ color: "black", fontSize: "12px" }}>
-                <p style={{ fontSize: "15px" }}>Electric Kettle</p>
-                <p style={{ color: "rgba(0, 0, 0, .4)" }}>
-                  1year Old <br /> Lagos
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
@@ -109,120 +73,42 @@ function Product3() {
             <p className={styles.pb}>Shop More</p>
           </div>
 
-          <div style={{ height: "90%", display: "flex" }}>
+          <div
+            style={{
+              height: "90%",
+              display: "flex",
+            }}
+          >
             <div className={styles.threeone}>
-              <div className={styles.side}>
-                <div className={styles.img}>
-                  <img src={five} alt="" />
+              {topHundredLeft.map((topHundredLeft) => (
+                <div className={styles.side}>
+                  <div className={styles.img}>
+                    <img src={topHundredLeft.image} alt="" />
+                  </div>
+                  <div style={{ color: "black", fontSize: "12px" }}>
+                    <p style={{ fontSize: "15px" }}>{topHundredLeft.name}</p>
+                    <p style={{ color: "rgba(0, 0, 0, .4)" }}>
+                      {topHundredLeft.age} <br /> {topHundredLeft.Location}
+                    </p>
+                  </div>
                 </div>
-                <div style={{ color: "black", fontSize: "12px" }}>
-                  <p style={{ fontSize: "15px" }}>Oven</p>
-                  <p style={{ color: "rgba(0, 0, 0, .4)" }}>
-                    1Months Old <br /> Abakaliki
-                  </p>
-                </div>
-              </div>
-              <div className={styles.side}>
-                <div className={styles.img}>
-                  <img src={six} alt="" />
-                </div>
-                <div style={{ color: "black", fontSize: "12px" }}>
-                  <p style={{ fontSize: "15px" }}>Mixer</p>
-                  <p style={{ color: "rgba(0, 0, 0, .4)" }}>
-                    brand new <br /> Port Harcourt
-                  </p>
-                </div>
-              </div>
-              <div className={styles.side}>
-                <div className={styles.img}>
-                  <img src={eight} alt="" />
-                </div>
-                <div style={{ color: "black", fontSize: "12px" }}>
-                  <p style={{ fontSize: "15px" }}>Pot Set</p>
-                  <p style={{ color: "rgba(0, 0, 0, .4)" }}>
-                    7Months Old <br /> Lokoja
-                  </p>
-                </div>
-              </div>
-              <div className={styles.side}>
-                <div className={styles.img}>
-                  <img src={nine} alt="" />
-                </div>
-                <div style={{ color: "black", fontSize: "12px" }}>
-                  <p style={{ fontSize: "15px" }}>Pressure</p>
-                  <p style={{ color: "rgba(0, 0, 0, .4)" }}>
-                    2years Old <br /> Enugu
-                  </p>
-                </div>
-              </div>
-              <div className={styles.side}>
-                <div className={styles.img}>
-                  <img src={ten} alt="" />
-                </div>
-                <div style={{ color: "black", fontSize: "12px" }}>
-                  <p style={{ fontSize: "15px" }}>Phone</p>
-                  <p style={{ color: "rgba(0, 0, 0, .4)" }}>
-                    4Months Old <br /> Enugu
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
             <div className={styles.threetwo}>
-              <div className={styles.side}>
-                <div className={styles.img}>
-                  <img src={eleven} alt="" />
+              {topHundredRight.map((topHundredRight) => (
+                <div className={styles.side} key={topHundredRight.id}>
+                  <div className={styles.img}>
+                    <img src={topHundredRight.image} alt="" />
+                  </div>
+                  <div style={{ color: "black", fontSize: "12px" }}>
+                    <p style={{ fontSize: "15px" }}>{topHundredRight.name}</p>
+                    <p style={{ color: "rgba(0, 0, 0, .4)" }}>
+                      {topHundredRight.age} <br />{" "}
+                      {topHundredRight.Location}
+                    </p>
+                  </div>
                 </div>
-                <div style={{ color: "black", fontSize: "12px" }}>
-                  <p style={{ fontSize: "15px" }}>Office Chair</p>
-                  <p style={{ color: "rgba(0, 0, 0, .4)" }}>
-                    2years Old <br /> Kwara
-                  </p>
-                </div>
-              </div>
-              <div className={styles.side}>
-                <div className={styles.img}>
-                  <img src={twelve} alt="" />
-                </div>
-                <div style={{ color: "black", fontSize: "12px" }}>
-                  <p style={{ fontSize: "15px" }}>Sofa</p>
-                  <p style={{ color: "rgba(0, 0, 0, .4)" }}>
-                    9Months Old <br /> Enugu
-                  </p>
-                </div>
-              </div>
-              <div className={styles.side}>
-                <div className={styles.img}>
-                  <img src={thirteen} alt="" />
-                </div>
-                <div style={{ color: "black", fontSize: "12px" }}>
-                  <p style={{ fontSize: "15px" }}>Mower</p>
-                  <p style={{ color: "rgba(0, 0, 0, .4)" }}>
-                    1year Old <br /> Calabar
-                  </p>
-                </div>
-              </div>
-              <div className={styles.side}>
-                <div className={styles.img}>
-                  <img src={fourteen} alt="" />
-                </div>
-                <div style={{ color: "black", fontSize: "12px" }}>
-                  <p style={{ fontSize: "15px" }}>Table</p>
-                  <p style={{ color: "rgba(0, 0, 0, .4)" }}>
-                    5Months Old <br /> Uyo
-                  </p>
-                </div>
-              </div>
-              <div className={styles.side}>
-                <div className={styles.img}>
-                  <img src={seven} alt="" />
-                </div>
-                <div style={{ color: "black", fontSize: "12px" }}>
-                  <p style={{ fontSize: "15px" }}>Tea Mixer</p>
-                  <p style={{ color: "rgba(0, 0, 0, .4)" }}>
-                    brand new <br /> Awka
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

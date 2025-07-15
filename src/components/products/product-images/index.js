@@ -58,6 +58,24 @@ import fifty from '../../../assets/section1-image/drums.png'
 import fiftyone from '../../../assets/section1-image/wristWatch.png'
 
 
+// TOP 100 Appliances
+import fiftytwo from '../../../assets/section3-image/one.jpg'
+import fiftythree from '../../../assets/section3-image/two.jpg'
+import fiftyfour from '../../../assets/section3-image/three.png'
+import fiftyfive from '../../../assets/section3-image/kettle.png'
+import fiftysix from '../../../assets/section3-image/microwave.png'
+import fiftyseven from '../../../assets/section3-image/mixer.png'
+import fiftyeight from '../../../assets/section3-image/coffeeMaker.png'
+import fiftynine from '../../../assets/section3-image/pot.png'
+import sixty from '../../../assets/section3-image/pressureCooker.png'
+import sixtyone from '../../../assets/section3-image/phone.png'
+import sixtytwo from '../../../assets/section3-image/officeChair.png'
+import sixtythree from '../../../assets/section3-image/sofa.png'
+import sixtyfour from '../../../assets/section3-image/mower.png'  
+import sixtyfive from '../../../assets/section3-image/centerTable.png'
+
+
+
 export{one, two, three, four, five, six, seven, eight, nine, ten}
 
 export {dp, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty, twentyone, twentytwo, twentythree}
@@ -67,3 +85,5 @@ export {twentyfour, twentyfive, twentysix, twentyseven, twentyeight, twentynine,
 export {thirtyfour, thirtyfive, thirtysix}
 
 export {thirtyseven, thirtyeight, thirtynine, fourty, fourtyone, fourtytwo, fourtythree, fourtyfour, fourtyfive, fourtysix, fourtyseven, fourtyeight, fourtynine, fifty, fiftyone }
+
+export {fiftytwo, fiftythree, fiftyfour, fiftyfive, fiftysix, fiftyseven, fiftyeight, fiftynine, sixty, sixtyone, sixtytwo, sixtythree, sixtyfour, sixtyfive}
