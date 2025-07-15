@@ -175,7 +175,7 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
 import styles from "./all-products.module.css";
-import { products } from "../data";
+// import { products } from "../data";
 import Button from "../../../components/button";
 
 function AllProducts({

@@ -128,7 +128,7 @@ function Footer() {
           alignItems: "center",
         }}
       >
-        <p>&copy; Victor Asiya</p>
+        <p>&copy; Victor Asiya et Elizabeth Orji</p>
       </div>
     </footer>
   );

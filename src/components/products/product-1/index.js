@@ -8,7 +8,7 @@ const Product = () => {
     <div className={styles.main}>
       <div className={styles.left}>
         <div className={styles.container}>
-          <h3 style={{ fontSize: "25px" }}>Samsung J6</h3>
+          <h3 style={{ fontSize: "25px" }}>Smart Vivo</h3>
           <span>
             <div className={styles.contents}>
               <svg
